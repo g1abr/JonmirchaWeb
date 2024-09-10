@@ -100,3 +100,61 @@ Los selectores de hermanos van a  aplicar a los  elementos que son hermanos y qu
     font-size: medium;
     text-decoration: none;
 }
+
+
+/*
+Selector universal
+*{
+    color: #163B89;
+} */
+
+.selector-universal *{
+    color: white;
+}
+
+/* pseudoclases */
+
+
+input{
+    margin: 5px;
+    border: 1px solid #163B89;
+    padding: 15px;
+    width: 50%;
+}
+.form-pseudoclases *:required{
+    font-size: 15px;
+
+}
+.form-pseudoclases *:valid{
+    background: #2193b0;
+}
+.form-pseudoclases *:invalid{
+    border-bottom: red;
+}
+.form-pseudoclases *:focus{
+    background: #163B89;
+}
+/* Arriba de hover */
+.menu-pseudoclases a:visited{
+    color: #fc67fa;
+}
+/* Hover abajo */
+.menu-pseudoclases a:hover{
+    background: #2e3b43;
+    
+}
+
+
+#temario-css:target{
+    background: #f4c4f3;
+}
+/* 
+    Orden para las pseudoclases 
+1. Link
+2. active
+3. visited
+4. hover
+
+*/
+
+/* Pseudoclase por la posición que ocupa el elemento en su contenedor  */
