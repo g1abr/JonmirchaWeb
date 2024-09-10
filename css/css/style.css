@@ -24,11 +24,21 @@ p{
     text-align: center;
     
 }
-p{
+/* p{
     background: #2193b0;
-}
+   
+} */
 
 #parrafo-uno{
    background-image: url(../img/image\ 3.png); 
+   font-size: x-large;
+   padding-top: 30px; /*Arriba*/
+   padding-bottom: 10px; /*Abajo*/
+   padding-left: 43px; /*Izquierda*/
+   padding-right: 1px; /*Derecha*/
+   font-weight: 600;
     
+}
+.texto-32{
+    padding-left: 40px;
 }
