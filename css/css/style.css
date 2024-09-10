@@ -211,3 +211,34 @@ input{
 }
 
 /* Pseudoelementos - Dan estilos a pares especificas de un elemento, se usa el :: para diferenciarlos de las pseudoclases */
+
+.saga-geminis::before{
+    content: "🙁";
+}
+.saga-precio::before{
+    content: "$";
+}
+.saga-precio::after{
+    content: " USD";
+}
+.p-pseudoelementos::first-letter{
+font-size: 50px;
+}
+
+/* Para la primera linea de mi parrafo */
+
+.p-pseudoelementos::first-line{
+    font-weight: bold;
+    }
+
+/* 
+Es un pseudoelemento que se activa cuando el usuario selecciona una porción del contenido, como al resaltar un texto. Permite cambiar el aspecto de esa selección.
+*/
+
+.p-pseudoelementos::selection{
+    color: #163B89;
+    background-color: #6dd5ed;
+}
+.input-pseudoelementos::placeholder{
+color: #fc67fa;
+}
