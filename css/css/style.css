@@ -46,3 +46,20 @@ p{
 .texto-32{
     padding-left: 40px;
 }
+.hijos-directos>li{
+    background: #163B89;
+}
+
+.hijos-decendientes b{
+    background-image: url(../img/images.jpeg);
+}
+/* Hermanos general
+Los selectores de hermanos van a  aplicar a los  elementos que son hermanos y que esten por debajo del elemto de referencia
+*/
+.hermanos-general ~ li{
+    background: #fc67fa;
+}
+
+.hermanos-adyacente ~ li{
+    background: #f4c4f3;
+}
