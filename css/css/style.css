@@ -60,6 +60,11 @@ Los selectores de hermanos van a  aplicar a los  elementos que son hermanos y qu
     background: #fc67fa;
 }
 
-.hermanos-adyacente ~ li{
+.hermanos-adyacente + li{
     background: #f4c4f3;
+}
+
+/* Selectores de atributos */
+.selectores-atributos a[href]{
+    color: #fc67fa;
 }
