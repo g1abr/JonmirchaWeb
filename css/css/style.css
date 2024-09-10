@@ -94,3 +94,9 @@ Los selectores de hermanos van a  aplicar a los  elementos que son hermanos y qu
 }
 
 
+/* El comodin del | aplica el estilo si contiene el texto en cuestion en una lista separada por espacios y que despues del texto en cuestion pueda venir un guón medio*/
+
+.selectores-atributos a[class~="menu"]{
+    font-size: medium;
+    text-decoration: none;
+}
