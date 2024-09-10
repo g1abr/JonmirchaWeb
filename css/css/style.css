@@ -158,3 +158,54 @@ input{
 */
 
 /* Pseudoclase por la posición que ocupa el elemento en su contenedor  */
+
+/* Aplicar estilos por posición  */
+
+/* Primera elemento */
+.lista-pseudoclases li:first-child{
+    color: #2193b0;
+
+}
+/* Ultimo elemento */
+.lista-pseudoclases li:last-child{
+    color: #fc67fa;
+
+}
+/*en CSS se utiliza para aplicar estilos a un elemento que ocupa una posición específica entre sus hermanos  */
+/* even para */
+/* odd impar */
+/* nuemero, el numero que ocupa ese elemento */
+
+.lista-pseudoclases li:nth-child(4n){
+    background-color: white;
+    font-weight: bold;
+    display: inline;
+}
+.lista-pseudoclases li:nth-child(odd){
+    background-color: rgb(236, 0, 0);
+    
+    
+}
+.lista-pseudoclases li:nth-child(even){
+    background-color: rgb(198, 179, 179);
+    
+    
+}
+
+/* En su tipo */
+.articulo-pseudoclases p:first-of-type{
+    background-color: white;
+    font-weight: bold;
+    display: inline;
+}
+.articulo-pseudoclases p:last-of-type{
+    background-color: rgb(236, 0, 0);
+    
+}
+.articulo-pseudoclases p:nth-child(3n){
+    background-color: rgb(198, 179, 179);
+}
+/* not */
+.articulo-pseudoclases *:not(p, div){
+    background: url(../img/images.jpeg);
+}
