@@ -209,3 +209,5 @@ input{
 .articulo-pseudoclases *:not(p, div){
     background: url(../img/images.jpeg);
 }
+
+/* Pseudoelementos - Dan estilos a pares especificas de un elemento, se usa el :: para diferenciarlos de las pseudoclases */
