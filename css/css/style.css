@@ -65,6 +65,32 @@ Los selectores de hermanos van a  aplicar a los  elementos que son hermanos y qu
 }
 
 /* Selectores de atributos */
-.selectores-atributos a[href]{
+.selectores-atributos a[target="_blank"]{
     color: #fc67fa;
 }
+
+/* El comodin del * aplica el estilo si contiene la palabra en cuestion en cualquiera parte */
+.selectores-atributos a[hrf*="jonmircha"]{
+    font-size: medium;
+}
+
+/* El comodin del  ^ aplica el estilo si contiene el texto o palabra en cuestion en el inicio */
+.selectores-atributos a[hrf^="http://"]{
+    font-size: medium;
+    text-decoration: none;
+}
+
+/* El comodin del $  aplica el estilo si contiene el texto o palabra en cuestion en el final */
+.selectores-atributos a[hrf$=".edu.co"]{
+    font-size: medium;
+    text-decoration: none;
+}
+
+/* El comodin del ~ aplica el estilo si contiene el texto en cuestion en una lista separada por espacio  */
+
+.selectores-atributos a[class~="curso"]{
+    font-size: medium;
+    text-decoration: none;
+}
+
+
