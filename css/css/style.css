@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@500&display=swap");
 
 /* Importar un css dentro de css */
 /* Son mala práctica por que son bloqueantes a la hora de que el navegador lea esta instrucción */
@@ -6,101 +6,109 @@
 
 /* 163B89 */
 
-body{
-    background: #2193b0;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0 );  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+body {
+  background: #2193b0; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #6dd5ed,
+    #2193b0
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #6dd5ed,
+    #2193b0
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+html {
+  scroll-behavior: smooth;
+}
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Sansita Swashed", system-ui;
+  color: #163b89;
 }
-html{
-    scroll-behavior: smooth;
+p {
+  color: #2e3b43;
 }
-
-h1, h2, h3, h4, h5, h6{
-    font-family: "Sansita Swashed", system-ui;
-    color: #163B89;
-}
-p{
-    color: #2e3b43;
-  
-}
-.title-song{
-    text-align: center;
-    
+.title-song {
+  text-align: center;
 }
 /* p{
     background: #2193b0;
    
 } */
 
-#parrafo-uno{
-   background-image: url(../img/image\ 3.png); 
-   font-size: x-large;
-   padding-top: 30px; /*Arriba*/
-   padding-bottom: 10px; /*Abajo*/
-   padding-left: 43px; /*Izquierda*/
-   padding-right: 1px; /*Derecha*/
-   font-weight: 600;
-    
+#parrafo-uno {
+  background-image: url(../img/image\ 3.png);
+  font-size: x-large;
+  padding-top: 30px; /*Arriba*/
+  padding-bottom: 10px; /*Abajo*/
+  padding-left: 43px; /*Izquierda*/
+  padding-right: 1px; /*Derecha*/
+  font-weight: 600;
 }
-.texto-32{
-    padding-left: 40px;
+.texto-32 {
+  padding-left: 40px;
 }
-.hijos-directos>li{
-    background: #163B89;
+.hijos-directos > li {
+  background: #163b89;
 }
 
-.hijos-decendientes b{
-    background-image: url(../img/images.jpeg);
+.hijos-decendientes b {
+  background-image: url(../img/images.jpeg);
 }
 /* Hermanos general
 Los selectores de hermanos van a  aplicar a los  elementos que son hermanos y que esten por debajo del elemto de referencia
 */
-.hermanos-general ~ li{
-    background: #fc67fa;
+.hermanos-general ~ li {
+  background: #fc67fa;
 }
 
-.hermanos-adyacente + li{
-    background: #f4c4f3;
+.hermanos-adyacente + li {
+  background: #f4c4f3;
 }
 
 /* Selectores de atributos */
-.selectores-atributos a[target="_blank"]{
-    color: #fc67fa;
+.selectores-atributos a[target="_blank"] {
+  color: #fc67fa;
 }
 
 /* El comodin del * aplica el estilo si contiene la palabra en cuestion en cualquiera parte */
-.selectores-atributos a[hrf*="jonmircha"]{
-    font-size: medium;
+.selectores-atributos a[hrf*="jonmircha"] {
+  font-size: medium;
 }
 
 /* El comodin del  ^ aplica el estilo si contiene el texto o palabra en cuestion en el inicio */
-.selectores-atributos a[hrf^="http://"]{
-    font-size: medium;
-    text-decoration: none;
+.selectores-atributos a[hrf^="http://"]
+{
+  font-size: medium;
+  text-decoration: none;
 }
 
 /* El comodin del $  aplica el estilo si contiene el texto o palabra en cuestion en el final */
-.selectores-atributos a[hrf$=".edu.co"]{
-    font-size: medium;
-    text-decoration: none;
+.selectores-atributos a[hrf$=".edu.co"] {
+  font-size: medium;
+  text-decoration: none;
 }
 
 /* El comodin del ~ aplica el estilo si contiene el texto en cuestion en una lista separada por espacio  */
 
-.selectores-atributos a[class~="curso"]{
-    font-size: medium;
-    text-decoration: none;
+.selectores-atributos a[class~="curso"] {
+  font-size: medium;
+  text-decoration: none;
 }
-
 
 /* El comodin del | aplica el estilo si contiene el texto en cuestion en una lista separada por espacios y que despues del texto en cuestion pueda venir un guón medio*/
 
-.selectores-atributos a[class~="menu"]{
-    font-size: medium;
-    text-decoration: none;
+.selectores-atributos a[class~="menu"] {
+  font-size: medium;
+  text-decoration: none;
 }
-
 
 /*
 Selector universal
@@ -108,12 +116,11 @@ Selector universal
     color: #163B89;
 } */
 
-.selector-universal *{
-    color: white;
+.selector-universal * {
+  color: white;
 }
 
 /* pseudoclases */
-
 
 /* input{
     margin: 5px;
@@ -121,32 +128,29 @@ Selector universal
     padding: 15px;
     width: 50%;
 } */
-.form-pseudoclases *:required{
-    font-size: 15px;
-
+.form-pseudoclases *:required {
+  font-size: 15px;
 }
-.form-pseudoclases *:valid{
-    background: #2193b0;
+.form-pseudoclases *:valid {
+  background: #2193b0;
 }
-.form-pseudoclases *:invalid{
-    border-bottom: red;
+.form-pseudoclases *:invalid {
+  border-bottom: red;
 }
-.form-pseudoclases *:focus{
-    background: #163B89;
+.form-pseudoclases *:focus {
+  background: #163b89;
 }
 /* Arriba de hover */
-.menu-pseudoclases a:visited{
-    color: #fc67fa;
+.menu-pseudoclases a:visited {
+  color: #fc67fa;
 }
 /* Hover abajo */
-.menu-pseudoclases a:hover{
-    background: #2e3b43;
-    
+.menu-pseudoclases a:hover {
+  background: #2e3b43;
 }
 
-
-#temario-css:target{
-    background: #f4c4f3;
+#temario-css:target {
+  background: #f4c4f3;
 }
 /* 
     Orden para las pseudoclases 
@@ -162,91 +166,84 @@ Selector universal
 /* Aplicar estilos por posición  */
 
 /* Primera elemento */
-.lista-pseudoclases li:first-child{
-    color: #2193b0;
-
+.lista-pseudoclases li:first-child {
+  color: #2193b0;
 }
 /* Ultimo elemento */
-.lista-pseudoclases li:last-child{
-    color: #fc67fa;
-
+.lista-pseudoclases li:last-child {
+  color: #fc67fa;
 }
 /*en CSS se utiliza para aplicar estilos a un elemento que ocupa una posición específica entre sus hermanos  */
 /* even para */
 /* odd impar */
 /* nuemero, el numero que ocupa ese elemento */
 
-.lista-pseudoclases li:nth-child(4n){
-    background-color: white;
-    font-weight: bold;
-    display: inline;
+.lista-pseudoclases li:nth-child(4n) {
+  background-color: white;
+  font-weight: bold;
+  display: inline;
 }
-.lista-pseudoclases li:nth-child(odd){
-    background-color: rgb(236, 0, 0);
-    
-    
+.lista-pseudoclases li:nth-child(odd) {
+  background-color: rgb(236, 0, 0);
 }
-.lista-pseudoclases li:nth-child(even){
-    background-color: rgb(198, 179, 179);
-    
-    
+.lista-pseudoclases li:nth-child(even) {
+  background-color: rgb(198, 179, 179);
 }
 
 /* En su tipo */
-.articulo-pseudoclases p:first-of-type{
-    background-color: white;
-    font-weight: bold;
-    display: inline;
+.articulo-pseudoclases p:first-of-type {
+  background-color: white;
+  font-weight: bold;
+  display: inline;
 }
-.articulo-pseudoclases p:last-of-type{
-    background-color: rgb(236, 0, 0);
-    
+.articulo-pseudoclases p:last-of-type {
+  background-color: rgb(236, 0, 0);
 }
-.articulo-pseudoclases p:nth-child(3n){
-    background-color: rgb(198, 179, 179);
+.articulo-pseudoclases p:nth-child(3n) {
+  background-color: rgb(198, 179, 179);
 }
 /* not */
-.articulo-pseudoclases *:not(p, div){
-    background: url(../img/images.jpeg);
+.articulo-pseudoclases *:not(p, div) {
+  background: url(../img/images.jpeg);
 }
 
 /* Pseudoelementos - Dan estilos a pares especificas de un elemento, se usa el :: para diferenciarlos de las pseudoclases */
 
-.saga-geminis::before{
-    content: "🙁";
+.saga-geminis::before {
+  content: "🙁";
 }
-.saga-precio::before{
-    content: "$";
+.saga-precio::before {
+  content: "$";
 }
-.saga-precio::after{
-    content: " USD";
+.saga-precio::after {
+  content: " USD";
 }
-.p-pseudoelementos::first-letter{
-font-size: 50px;
+.p-pseudoelementos::first-letter {
+  font-size: 50px;
 }
 
 /* Para la primera linea de mi parrafo */
 
-.p-pseudoelementos::first-line{
-    font-weight: bold;
-    }
+.p-pseudoelementos::first-line {
+  font-weight: bold;
+}
 
 /* 
 Es un pseudoelemento que se activa cuando el usuario selecciona una porción del contenido, como al resaltar un texto. Permite cambiar el aspecto de esa selección.
 */
 
-.p-pseudoelementos::selection{
-    color: #163B89;
-    background-color: #6dd5ed;
+.p-pseudoelementos::selection {
+  color: #163b89;
+  background-color: #6dd5ed;
 }
-.input-pseudoelementos::placeholder{
-color: #fc67fa;
+.input-pseudoelementos::placeholder {
+  color: #fc67fa;
 }
 .form-agrupar-selectores input[type="text"],
 .form-agrupar-selectores input[type="email"],
-.form-agrupar-selectores textarea{
-    border: 1px, solid #163B89;
-    background: #6ded9860;
+.form-agrupar-selectores textarea {
+  border: 1px, solid #163b89;
+  background: #6ded9860;
 }
 
 /* 
@@ -268,9 +265,21 @@ La cáscada es el mecanismo en que el  navegador aplica los estilos. Y toma en c
 
 /* 
 La Especificidad es el peso que tiene un selector cuando hay conflicto de estilos. Se calcula de la siguiente forma:
-    Etiquetas y pseudoelementos --------------- 0,0,0,1
-    Clases, atributos y pseudoclases ---------- 0,0,1,0
-    Identificadores --------------------------- 0,1,0,0
-    Estilos en línea -------------------------- 1,0,0,0
-    !important -------------------------------- Rompe la especificidad
+    Etiquetas y pseudoelementos ---------------- 0,0,0,1
+    Clases, atributos y pseudoclases ----------- 0,0,1,0
+    Identificadores ---------------------------- 0,1,0,0
+    Estilos en línea --------------------------- 1,0,0,0
+    !important --------------------------------- Rompe la especificidad
 */
+
+/* Evitar la herencia 
+
+Al elemento que hereda, debes colocar valores al elemento
+*/
+/* p{
+para heredar una propiedad inherit
+    background: inherit;
+} */
+
+
+/* El reseteo y la normalización de estilos en CSS son dos técnicas utilizadas para asegurar que los sitios web se vean consistentes en todos los navegadores, ya que cada navegador tiene sus propios estilos predeterminados para los elementos HTML. Estas diferencias pueden causar que el mismo sitio web se vea diferente en distintos navegadores si no se toman medidas para unificar los estilos de base.*/
