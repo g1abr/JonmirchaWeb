@@ -115,12 +115,12 @@ Selector universal
 /* pseudoclases */
 
 
-input{
+/* input{
     margin: 5px;
     border: 1px solid #163B89;
     padding: 15px;
     width: 50%;
-}
+} */
 .form-pseudoclases *:required{
     font-size: 15px;
 
@@ -242,3 +242,26 @@ Es un pseudoelemento que se activa cuando el usuario selecciona una porción del
 .input-pseudoelementos::placeholder{
 color: #fc67fa;
 }
+.form-agrupar-selectores input[type="text"],
+.form-agrupar-selectores input[type="email"],
+.form-agrupar-selectores textarea{
+    border: 1px, solid #163B89;
+    background: #6ded9860;
+}
+
+/* 
+El algoritmo de CSS: Es la forma en que el navegador aplica los estilos al documento HTML Es vital entender este concepto para que entiendas como se aplican y en algunas ocasiones se sobreescriben las reglas Css
+1) La Cáscada
+2) La Especificidad
+3) La Herencia
+*/
+
+/* 
+La cáscada es el mecanismo en que el  navegador aplica los estilos. Y toma en cuenta lo siguiente en este orden:
+    1) El origen del código: 
+        -El user agent (los estilos por defecto del navegador)
+        -Personalizaciones del usuario
+        -Los estilos del autor
+    2) La especificidad del Selector
+    3) Orden de aparicion 
+*/
