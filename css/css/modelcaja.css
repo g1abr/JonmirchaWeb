@@ -1,9 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@500&display=swap");
 
-*{
+* {
     font-family: "Sansita Swashed", system-ui;
     color: #163b89;
+    margin: 0;
+    padding: 0;
 }
+
 /* 
 Modelo de caja
 https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/The_box_model
@@ -22,4 +25,81 @@ Modelo de Caja: Es la forma en que CSS ve a los elementos HTML y ¿cómo los ve?
     3. Abajo (bottom)
     4. Izquierda (left)
 */
- 
+/*  
+h1{
+    border: thick double blue;
+} */
+.caja-uno,
+.caja-dos {
+    background: pink;
+    /* margin-bottom: 12px; */
+    padding: 12px;
+    margin: 20px;
+
+}
+
+/* Margin y Padding
+1 valor = aplica a los 4 lados
+2 valores = 
+    primer valor es para los lados verticles (t/b)
+    segundo valor es para los lados horizontales (l/r)
+
+    margin: 34px 29px;
+    padding= 23px 98px
+
+3 valores = 
+    primer valor es para top
+    segundo valor es para los lados horizontales (l/r)
+    tercer valor es para bottom
+
+4 valores= 
+    primer valor es para top
+    segundo valor es para right
+    tercer valor es para bottom
+    cuarto valor es para left
+
+*/
+
+/* 
+Caja de Línea
+    - Ocupan el espacio necesario para mostrar su contenido.
+    - No tienen dimensiones modificables (alto, ancho)
+    - Permiten otros elementos a su lado.
+    - Padding y margin solo empuejan a elemntos adyacentes en horizontal, NUNCA EN VERTICAL
+Caja de Bloque 
+    - Ocupan todo el ancho disponible, lo que genera saltos de línea
+    - Tienen dimensiones modificables (alto, ancho)
+    - No permiten otros elementos a su lado (aunque especifique un ancho, siguen ocupando todo el espacio desponible a lo ancho, generando saltos de línea
+
+*/
+
+
+
+
+hr {
+    border: thin solid #163b89;
+}
+.caja-linea,
+.caja-bloque{
+    background: palevioletred;
+    width: 50%;
+    height: 70px;
+    margin-top: 23px;
+    margin-left: 70px;
+    border: thick solid #230033;
+    padding: 13px;
+    /* display: none;  */ 
+
+}
+
+/* 
+    Propiedades Display
+        inline
+        block 
+        inline-block - Se comporta como un elemento de linea pero acepta modificar sus dimensiones (alto y ancho)
+        none
+        table
+        list-item
+        flex
+        grid
+*/
