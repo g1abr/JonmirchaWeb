@@ -4,3 +4,19 @@
     font-family: "Sansita Swashed", system-ui;
     color: #163b89;
 }
+/* 
+Modelo de caja
+https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/The_box_model
+
+Modelo de Caja: Es la forma en que CSS ve a los elementos HTML y ¿cómo los ve? como si fueran cajas con las siguientes propiedades: 
+    1. El contenido (content): El contenido de los elementos html
+    2. El borde (border): Lo que delimita cada uno de los elementos html
+    3. El relleno (padding): Son las distancias internas (la distancia del border al contenido)
+    4. El margen (margin): Son las distancias externas (la distancia entre el elemento html y sus elementos hermanos o padres) 
+
+    Dentro del modelo de caja hay que considerar que una caja tendrá 4 lados: 
+    1. Arriba (top)
+    2. Derecha (right)
+    3. Abajo (bottom)
+    4. Izquierda (left)
+*/
