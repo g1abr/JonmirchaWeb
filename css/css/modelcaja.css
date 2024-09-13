@@ -3,8 +3,7 @@
 * {
     font-family: "Sansita Swashed", system-ui;
     color: #163b89;
-    margin: 0;
-    padding: 0;
+  
 }
 
 /* 
@@ -15,10 +14,22 @@ Codigo de reseteo
 
 html{
     box-sizing: border-box;
+    
     }
 *,*::before,*::after{
     box-sizing: inherit;
 }
+
+/* Mi codigo css */
+* {
+    font-family: "Sansita Swashed", system-ui;
+    color: #163b89;
+  }
+body{
+    background: #2193b0; /* fallback for old browsers */
+  }
+
+
 
 
 /* 
@@ -199,3 +210,91 @@ Define cómo se calculan el ancho y la altura del elemento: si incluyen el relle
    height: 40px;
    background-color: #230033;
 }
+
+/*  Float*/
+
+.float{
+    background: pink;
+}
+.float-left{
+ float: left;   
+ margin: 0 25px 0 25px;
+}
+.float-right{
+    float: right;
+    margin: 0 25px 0 25px;
+}
+
+.clear{
+    /* El elemento despejado se moverá después de cualquier elemento flotante que lo preceda. Esto incluye tanto los elementos flotantes de la izquierda como los de la derecha. */
+    clear: both;
+}
+
+/*  Colapso de Márgenes Verticales  */
+.margin-collapse{
+background: blueviolet;
+
+}
+.margin-collapse div{
+    border: thin solid blue;
+    margin: 16px 0 0  0;
+    color: white;
+}
+
+.margin-collapse-arreglo{
+    background: blueviolet;
+    
+    }
+    .margin-collapse-arreglo div{
+        border: thin solid blue;
+        margin: 16px 0 0 0;
+        color: white;
+    }
+
+    /* Centrado de caja */
+
+.sitio-web{
+    border: thin solid black;
+    background: thistle;
+    width: 60%;
+    height: 1000px;
+    padding: 16px;
+    /* centra el texto */
+    text-align: center;
+
+    /* centrar una caja */
+    /* margin: 0 auto; */
+    margin-left: auto ;
+    margin-right: auto;
+/* usando margenes, izquierda derecha  */
+
+}
+
+
+
+
+
+
+
+
+/* 
+Tipos de Posicionamiento
+    -Static (default)}
+    -Relative 
+    -absolute fixed 
+    -Sticky
+
+*/
+
+/* 
+Para mover los elementos posicionados se activan las propiedades
+    -top (vertical - eje Y)
+    -botton (vertical - eje Y)
+    -left (horizontal - eje  X)
+    -right (horizontal - eje X)
+    -z index (profundidad - eje Z)
+
+
+Las propiedades top y left van a tener preferencia por sobre botton y right respectivamente.
+Estás 5 propiedades no funcionan con el valor static
+*/
