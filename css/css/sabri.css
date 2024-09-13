@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@500&display=swap");
+
+* {
+    font-family: "Sansita Swashed", system-ui;
+    color: #163b89;
+  
+}
+body{
+    background: #163B89;
+}
+
+nav{
+    background: #CDE5F1;
+}
+main.container{
+    margin-left: auto;
+    margin-right: auto;
+    color: #000;
+    background: #536976;
+    /* para centrar debo agregar porpiedades de ancho y alto */
+    
+    width: 70%;
+}
