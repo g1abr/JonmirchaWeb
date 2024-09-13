@@ -8,6 +8,20 @@
 }
 
 /* 
+Codigo de reseteo
+
+
+*/
+
+html{
+    box-sizing: border-box;
+    }
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+
+
+/* 
 Modelo de caja
 https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/The_box_model
 
@@ -166,3 +180,22 @@ Define cómo se calculan el ancho y la altura del elemento: si incluyen el relle
     color: white;
 }
 
+.box-sizsing-border {
+    box-sizing: border-box;
+}
+
+.container-col-3{
+    background: tomato;
+    margin: 20px 0 0 0 ;
+    width: 600px;
+
+}
+
+.container-col-3 >*{
+    box-sizing: border-box;
+   width: 200px;
+   /* flota los elementos para la izquierda */
+   float: left;
+   height: 40px;
+   background-color: #230033;
+}
