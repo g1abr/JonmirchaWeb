@@ -94,12 +94,75 @@ hr {
 
 /* 
     Propiedades Display
-        inline
-        block 
+        inline - El elemento se convierte en un elemento en línea : se comporta como texto simple. Cualquier heighty aplicado nowidth tendrá efecto.
+        
+        block - El elemento se convierte en un elemento de bloque : comienza en una nueva línea y ocupa todo el ancho.
+
         inline-block - Se comporta como un elemento de linea pero acepta modificar sus dimensiones (alto y ancho)
-        none
-        table
-        list-item
-        flex
-        grid
+
+        none El elemento se elimina por completo , como si no estuviera en el código HTML en primer lugar.
+        
+        table - El elemento se comporta como una tabla : <table>. Su contenido y elementos secundarios se comportan como celdas de tabla
+        
+        list-item - El elemento se comporta como un elemento de lista : <li>. La única diferencia con el bloque es que un elemento de lista tiene una viñeta .
+        
+        flex - El elemento se convierte en un contenedor flexbox . Por sí solo, se comporta como un elemento de bloque.
+        
+        grid - El elemento se convierte en un contenedor de cuadrícula . Por sí solo, se comporta como un elemento de bloque.
 */
+
+.caja-none{
+    display: block;
+    background: #230033;
+    padding: 12px 23px;
+    margin: 23px 0 25px 0;
+}
+.caja-blok{
+    display: inline;
+    background: #163b89;
+    color: aliceblue;
+    position: relative;
+    
+}
+
+/* Overflow */
+
+.overflow{
+    overflow: scroll;
+    background: rosybrown;
+}
+
+/* Tamaño de la caja 
+en el temario 32
+
+Define cómo se calculan el ancho y la altura del elemento: si incluyen el relleno y los bordes o no.
+*/
+.box-sizsing-content , 
+.box-sizsing-border{
+    box-sizing: content-box ;
+    background: deeppink;
+    width: 500px;
+    height: 250px;
+    padding: 10px;
+
+    /* 
+    W 500px + 10pd = 510
+    H 250 + 10pd = 260
+
+    */
+    /* Usando la propiedad border  */
+    border: 5px;
+ /* 
+    W 500px + 10pd + 5bor = 530
+    H 250 + 10pd + 5bor = 280
+
+    */
+   
+}
+
+
+.box-sizsing-content p, 
+.box-sizsing-border p {
+    color: white;
+}
+
