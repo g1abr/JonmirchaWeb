@@ -62,10 +62,10 @@ Posición del elemento de destino
 .relative {
   background: #3666a4;
   position: relative;
-  width: 40%;
+  width: 20%;
   height: 30px;
   bottom: 15px;
-  right: -500px;
+  right: -800px;
 }
 
 /*
@@ -111,3 +111,10 @@ sticky: es una combinación de posicionamiento relave y fixed, para este posicio
 
 Para que este comportamiento funcione el elemento sticky debe ser hijo directo del body o su elemento contenedor debe tener dimensiones definidas y sólo será sticky dentro dela dimenciones de su contenedor padre 
 */
+
+.sticky{
+    background-color: aquamarine;
+    
+    position: sticky;
+    top: 5px;
+}
