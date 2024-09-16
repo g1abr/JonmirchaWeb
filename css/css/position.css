@@ -108,13 +108,35 @@ fixed: Elemento pierde sus dimensiones y posicion original en el flujo del docum
 /* 
 sticky: es una combinación de posicionamiento relave y fixed, para este posicionamiento las propiedades de top, left, bottom y right no mueven el elemento, sirven como un punto de referencia, mientras no llegun a ese valor el elemento se comparta como relative, cuando llega se convierte en fixed.
 
-
 Para que este comportamiento funcione el elemento sticky debe ser hijo directo del body o su elemento contenedor debe tener dimensiones definidas y sólo será sticky dentro dela dimenciones de su contenedor padre 
 */
 
 .sticky{
     background-color: aquamarine;
-    
+    width: 50%;
     position: sticky;
-    top: 5px;
+    top: 55px;
 }
+
+.sticky-parent{
+margin-top: 20px;
+
+height: 600px;
+background: #3666a4;
+border: thin solid tomato;
+}
+.sticky-child{
+  background: tomato;
+  padding-top: 32px;
+  position: sticky;
+  top: 20px;
+
+}
+/* 
+z-index: propiedad que permite controlar la profundidad de los elementos posicionados su valor por defecto es auto, acepta números positivos, negativos y cero.
+
+A mayor valor el elemento esta más al frente, a menor valor más al fondo. 
+
+Un elemento padre nunca podrá estar sobre sus elementos hijos, sin embargo los elementos hijos si pueden dándoles un valor negativo.
+
+*/
