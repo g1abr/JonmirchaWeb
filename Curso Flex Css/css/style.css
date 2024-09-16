@@ -2,3 +2,20 @@
     color: #163b89;
     background-color: #6dd5ed;
   }
+
+.container{
+    background-color: darkgrey;
+    display: flex;
+    flex-direction: column;
+
+}
+.item{
+    background-color: aquamarine;
+    
+}
+.container2{
+    background-color: darkgrey;
+    display: flex;
+    flex-direction: row-reverse;
+
+}
