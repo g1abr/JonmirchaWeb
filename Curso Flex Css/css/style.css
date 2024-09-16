@@ -1,0 +1,4 @@
+.p-pseudoelementos::selection {
+    color: #163b89;
+    background-color: #6dd5ed;
+  }
