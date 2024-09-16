@@ -11,7 +11,9 @@
     background-color: darkgrey;
     display: flex;
     /* columna o fila flex-direction */
-    flex-direction: column;
+    /*  row  | row-reverse | colum | colum-reverse
+    */
+    flex-direction: row;
     flex-wrap: wrap;
     height: 30vh;
 
@@ -27,7 +29,7 @@
 .container2{
     background-color: darkgrey;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     flex-wrap: wrap;
 
 }
