@@ -2,20 +2,31 @@
     color: #163b89;
     background-color: #6dd5ed;
   }
+  *,*::after, *::before{
+    /* considera los bordes como parte de contenido  */
+    box-sizing: border-box;
+  }
 
 .container{
     background-color: darkgrey;
     display: flex;
-    flex-direction: column;
+    /* columna o fila flex-direction */
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 30vh;
 
 }
 .item{
     background-color: aquamarine;
+    width: 20%;
+    border: thin solid tomato;
+    padding: 6px;
     
 }
 .container2{
     background-color: darkgrey;
     display: flex;
     flex-direction: row-reverse;
+    flex-wrap: wrap;
 
 }
