@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+    /* padding-top: 50px; */
+}
+
+.header{
+    background: #3666A4;
+    width: 100%;
+    height: 50px;
+}
+
+.fixed-top{
+    position: fixed;
+    top: 0;
+}
+/* Para usar la posición sticky debe esta situado don quiere ir. Por ejemplo si debe estar en la cabecera, y hay elementos antes, solo debes correr el elementos sticky  */
+.sticky-top{
+    position: sticky;
+    top: 0;
+    
+}

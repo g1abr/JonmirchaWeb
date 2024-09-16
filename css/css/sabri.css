@@ -8,8 +8,8 @@
 
 * *,*{
     margin: 0;
-    padding: 0;
-}
+
+} 
 
 body{
     background: #163B89;
@@ -19,7 +19,7 @@ body{
 .nav-position{
     background: #CDE5F1;
     width: 100%;
-    position: fixed;
+    position: sticky;
     top: 0;
 }
 main.container{
