@@ -11,14 +11,15 @@
     background-color: darkgrey;
     display: flex;
     /* columna o fila flex-direction */
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     height: 30vh;
 
 }
 .item{
     background-color: aquamarine;
-    width: 20%;
+    /* width: 20%; */
+    height: 50%;
     border: thin solid tomato;
     padding: 6px;
     
