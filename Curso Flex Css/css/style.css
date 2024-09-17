@@ -17,6 +17,10 @@
     /* nowrap | wrap | wrap-reverse */
     flex-wrap: wrap;
     height: 30vh;
+    /* Justify-content: flex-start | flex-start | center | flex-end | space-between | space-around | space-evenly */
+
+    justify-content: flex-start;
+    /* Define la alinieación de los elementos hijos, respecto del eje principal  */
 
 }
 .item{
