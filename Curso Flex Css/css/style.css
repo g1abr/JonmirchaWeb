@@ -34,10 +34,117 @@
 .container2{
     background-color: darkgrey;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: end;
+
 
 }
+.container3{
+  background-color: darkgrey;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container4{
+  background-color: darkgrey;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between ;
+}
+.container5{
+  background-color: darkgrey;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+
+}
+
+.container6{
+  background-color: darkgrey;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+
+}
+.container7{
+  background-color: darkgrey;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+
+}
+
+
+
+.container8{
+  background-color: darkgrey;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: end;
+  height: 30vh;
+
+
+}
+.container9{
+background-color: darkgrey;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+justify-content: center;
+height: 30vh;
+}
+
+.container10{
+background-color: darkgrey;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+justify-content: space-between ;
+height: 30vh;
+}
+.container11{
+background-color: darkgrey;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+justify-content: space-evenly;
+height: 30vh;
+
+
+}
+
+.container13{
+background-color: darkgrey;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+justify-content: space-around;
+height: 30vh;
+
+
+}
+.container14{
+  background-color: darkgrey;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 30vh;
+  justify-content: flex-start;
+ 
+
+}
+
 
 /* Atajo 
 

@@ -1,0 +1,133 @@
+.p-pseudoelementos::selection {
+  color: #163b89;
+  background-color: #6dd5ed;
+}
+
+*,
+*::after,
+*::before {
+  /* considera los bordes como parte de contenido  */
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: darkgrey;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 30vh;
+
+  justify-content: flex-start;
+  /* Define la alinieación de los elementos hijos, respecto del eje principal  (main axis)*/
+  /* Justify-content: flex-start | flex-start | center | flex-end | space-between | space-around | space-evenly */
+}
+
+.item {
+  background-color: aquamarine;
+  height: 12%;
+  border: thin solid tomato;
+  padding: 6px;
+}
+
+.container2 {
+  background-color: darkgrey;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: end;
+}
+
+.container3 {
+  background-color: darkgrey;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container4 {
+  background-color: darkgrey;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.container5 {
+  background-color: darkgrey;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.container6 {
+  background-color: darkgrey;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.container7 {
+  background-color: darkgrey;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.container8 {
+  background-color: darkgrey;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: end;
+  height: 30vh;
+}
+
+.container9 {
+  background-color: darkgrey;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 30vh;
+}
+
+.container10 {
+  background-color: darkgrey;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 30vh;
+}
+
+.container11 {
+  background-color: darkgrey;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  height: 30vh;
+}
+
+.container13 {
+  background-color: darkgrey;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 30vh;
+}
+
+.container14 {
+  background-color: darkgrey;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 30vh;
+  justify-content: flex-start;
+}
+
