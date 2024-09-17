@@ -75,13 +75,27 @@ h3{
     
 }
 .container{
+/* background-color: aqua; */
 display: flex;
 flex-direction: row-reverse;
-flex-wrap: nowrap;
-justify-content: space-evenly;
+flex-wrap: wrap-reverse;
+justify-content: center;
+align-items: center;
+
+
+
 
 
 }
 .item{
-    border: thin solid #163b89;
+
+    width: 50%;
+}
+
+.margin-top{
+    padding-top: 10px;
+}
+ol{
+    list-style-type: none
+    
 }

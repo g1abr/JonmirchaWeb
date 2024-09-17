@@ -13,22 +13,42 @@
 .container {
   background-color: darkgrey;
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   flex-wrap: wrap;
   height: 30vh;
 
-  justify-content: flex-start;
+  justify-content: space-evenly;
   /* Define la alinieación de los elementos hijos, respecto del eje principal  (main axis)*/
   /* Justify-content: flex-start | flex-start | center | flex-end | space-between | space-around | space-evenly */
+
+  /* 
+  Define la alineación de los hijos en el eje transversal (cross axis), dentro de cada linea
+/* 
+/* 
+  Eje transversal
+  Para alinear en el eje sobranten
+  para ello estan las propiedades Alig-items; alig-content
+  */
+  align-items: center;
+  /* Stretch | flex-start | flex-end | center | baseline 
+  https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+  
+  */
+
+  align-content: flex-start;
+  /* Define  la alineación de los hijos en el eje transversal (cross axis), NO funciona cuando los hijos están en una sóla línea */
+/* flex-start | flex-end | center | space-between | space-around | space-evenly */
 }
+
 
 .item {
   background-color: aquamarine;
-  height: 12%;
   border: thin solid tomato;
   padding: 6px;
 }
 
+
+/* 
 .container2 {
   background-color: darkgrey;
   display: flex;
@@ -130,4 +150,4 @@
   height: 30vh;
   justify-content: flex-start;
 }
-
+ */
