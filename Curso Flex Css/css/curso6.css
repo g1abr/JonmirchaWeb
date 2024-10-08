@@ -1,0 +1,22 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+
+.contenido{
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: row-reverse;
+    height: 30vh;
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+    align-items: baseline;
+    align-content: flex-end ;
+
+
+}
+.item{
+ height: 25%;
+    background-color: palevioletred;
+}
