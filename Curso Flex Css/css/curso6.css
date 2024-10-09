@@ -1,25 +1,60 @@
-*, *::after, *::before{
-    box-sizing: border-box;
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.contenido {
+  background-color: blueviolet;
+  display: flex;
+  flex-direction: row;
+  height: 40vh;
+  flex-wrap: nowrap;
+
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+  margin-bottom: 30px;
+}
+.item {
+  /* Propiedades para los hijos
+  https://cssreference.io/property/flex-grow/ 
+  */
+  /* Propiedades y su valor por defecto
+    flex-grow:0;
+    flex-shrink:1;
+    flex-basis: auto;
+*/
+  border: 1px solid black;
+  background-color: palevioletred;
+ 
+  /* Cuando la caja flexbox tenga espacio sobrante, es la habilidad o el factor de crecer, valor por defecto es 0, NO se aceptan valores negativos */
+}
+.item-2 {
+  border: 1px solid black;
+  background-color: aquamarine;
+  flex-shrink: 1;
+  /*Cuando la caja flexbox NO tenga espacio sobrante, es la habilidad o el factor de encogerse, valor por defecto es 1, NO se aceptan valores negativos  */
+}
+.item-2:nth-child(2){
+  flex-shrink: 2;
+}
+
+.item-3 {
+  border: 1px solid black;
+  background-color: rgb(135, 112, 216);
+  /* 
+  Es el tamaño del elemento hijo dentro de la línea de la caja flexbox Si la caja flexbox tienen dirección de fila, flex-basis representa el width
+  Si la caja flexbox tiene dirección de columna, flex-basis representa el height
+  Valor por defecto auto 
+  */
+  flex-basis: auto;
 }
 
 
-.contenido{
-    background-color: blueviolet;
-    display: flex;
-    flex-direction: row-reverse;
-    height: 30vh;
-    flex-wrap: wrap;
 
-    justify-content: space-around;
-    align-items: start;
-    /* align-content: flex-end ; */
+/* .item:nth-child(2){
+    flex-grow: 1;
+} */
 
-
-}
-.item{
- height: 25%;
-    background-color: palevioletred;
-}
-.item:nth-child(1){
-    font-size: 109%;
-}
+/*Ver el Video 7/13 */
