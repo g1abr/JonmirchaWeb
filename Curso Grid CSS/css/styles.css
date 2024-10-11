@@ -105,3 +105,11 @@ grid-gap: 100px 0px;
 /* Para no tener espaciado */
 gap: 0;
 }
+
+.grid-explicit .item:nth-child(10){
+    color: wheat;
+    /* 
+    Define la posición de inicio de fila de un elemento de la cuadrícula . 
+    grid-row-start */
+
+}
