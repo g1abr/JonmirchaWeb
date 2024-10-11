@@ -72,11 +72,36 @@ img{
 
     /*repeat para hacer patrones   */
     /* Cinco  */
-    grid-template-columns: repeat(5, 20%);
+    grid-template-columns: repeat(4, 20%);
     /* el primero son las columnas y el valor auto es tamaño de la fila, para que se adapte al contenido  */
-    grid-template-rows: repeat(4, auto );
-    /*  */
+    grid-template-rows: repeat(5, auto );
+    /* 
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr );
+    */
+/* C: columna R: row */
+
+/* Grid de 5x4, pero los del centro tenga mas espacio */
+grid-template-columns: 20% 30% 30% 20%;
+/* Or 
+grid-template-colums: 20% repeat(2, 30%) 20% */
+grid-template-rows: repeat(5, auto);
 
 
+/* 
+    grid-row-gap: ;
+    Define el canal entre las filas de un contenedor de cuadrícula .*/
 
+/* el espacio entre las unidades*/
+column-gap: 1rem;
+row-gap: 1rem;
+
+/* La función de las dos es
+grid-gap: 100px 0px 
+primer valor la distancia entre las filas,  y el segundo es para columnas */
+
+grid-gap: 100px 0px;
+
+/* Para no tener espaciado */
+gap: 0;
 }
