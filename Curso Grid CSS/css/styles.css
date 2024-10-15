@@ -113,7 +113,7 @@ primer valor la distancia entre las filas,  y el segundo es para columnas */
 /* Curso Grid CSS: (3/17) Posicionamiento con Grid Lines */
 
 .grid-explicit .item:nth-child(10) {
-color: white;
+  color: white;
   /* 
     Define la posición de inicio de fila de un elemento de la cuadrícula . 
     grid-row-start */
@@ -139,35 +139,71 @@ color: white;
   /*Atajo de grid-colum, grid-row 
   grid-area: grid-row-start / grid-row-end / grid-column-start / grid-column-end
   grid-area:  5/6 / 3/5 ; */
-
-
-
 }
 
-.grid-explicit .item:nth-child(13){
-    /* Abarca de la posición que te encuentras y suma el numero*/
-    grid-row: span 2;
-    grid-column:  span 2;
-    background-color: aquamarine;
-
+.grid-explicit .item:nth-child(13) {
+  /* Abarca de la posición que te encuentras y suma el numero*/
+  grid-row: span 2;
+  grid-column: span 2;
+  background-color: aquamarine;
 }
-.grid-explicit .item:nth-child(18){
-    /* Usar el span para que ocupe todo el espcio y no quede espacios en blanco */
-    grid-column: span 2/5;
-    color: white;
+.grid-explicit .item:nth-child(18) {
+  /* Usar el span para que ocupe todo el espcio y no quede espacios en blanco */
+  grid-column: span 2/5;
+  color: white;
   background-color: brown;
 }
-.grid-line-names{
-    display: grid;
-    /* Posicionamiento con nombres de grid linees */
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: [linea-c1] 1fr [linea-c2] 1fr [linea-c3] 1fr [linea-c4];
-    grid-template-rows: [linea-r1] 1fr [linea-r2] 1fr [linea-r3] 1fr [linea-r4];
+.grid-line-names {
+  display: grid;
+  /* Posicionamiento con nombres de grid linees */
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: [linea-c1] 1fr [linea-c2] 1fr [linea-c3] 1fr [linea-c4];
+  grid-template-rows: [linea-r1] 1fr [linea-r2] 1fr [linea-r3] 1fr [linea-r4];
 }
-.grid-line-names .item:nth-child(3){
-background-color: antiquewhite;
-grid-row: linea-r3/linea-r4;
-grid-column: linea-c1/linea-c4;
+.grid-line-names .item:nth-child(3) {
+  background-color: antiquewhite;
+  grid-row: linea-r3/linea-r4;
+  grid-column: linea-c1/linea-c4;
+}
+
+.grid-areas {
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  grid-template-rows: 100px repeat(2, 1fr) 60px;
+/* para tener tres filas */
+
+  /* Definimos las areas 
+"entre parentesis la filas" */
+  grid-template-areas:
+  /* Cuando tiene otra fila, simplemente agrega otra fila de contenido */
+    "header header"
+    "content sidebar"
+
+    /* para dejar un espacio vacío, se pone un . y lo interpreta como vacío  */
+      "content ."
+    "footer footer";
+}
+
+/* Debemos llamar a los elementos */
+.header{
+    /* El valor que definimos  */
+    grid-area: header;
+    background-color: #D0EAFF;
+}
 
 
+.content{
+    grid-area: content;
+    background-color: #2BF07A;
+}
+
+.sidebar{
+    grid-area: sidebar;
+    background-color: #E9FC1D;
+}
+
+
+.footer{
+    grid-area: footer;
+   background-color:  red;
 }
