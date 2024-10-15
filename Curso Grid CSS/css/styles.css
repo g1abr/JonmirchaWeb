@@ -105,6 +105,7 @@ grid-gap: 100px 0px;
 /* Para no tener espaciado */
 gap: 0;
 }
+/* Curso Grid CSS: (3/17) Posicionamiento con Grid Lines */
 
 .grid-explicit .item:nth-child(10){
     color: wheat;
