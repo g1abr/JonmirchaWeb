@@ -152,7 +152,8 @@ color: white;
 
 }
 .grid-explicit .item:nth-child(18){
-    grid-column: 3/5;
+    /* Usar el span para que ocupe todo el espcio y no quede espacios en blanco */
+    grid-column: span 2/5;
     color: white;
   background-color: brown;
 }
