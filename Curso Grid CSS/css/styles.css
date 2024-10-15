@@ -4,113 +4,155 @@ html {
   font-family: sans-serif;
   scroll-behavior: smooth;
 }
+
 *,
 *::after,
 *::before {
-
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
-a[href="#top"]{
-    margin: 1rem;
-    display: block;
-    font-size: 2rem;
-    text-align: center;
-    text-decoration: none;
+a[href="#top"] {
+  margin: 1rem;
+  display: block;
+  font-size: 2rem;
+  text-align: center;
+  text-decoration: none;
 }
-p{
-    margin: 0;
+
+p {
+  margin: 0;
 }
-h2{
-    margin-top: 50vh;
-    text-align: center;
+
+h2 {
+  margin-top: 50vh;
+  text-align: center;
 }
-img{
-    margin: auto;
-    display: block;
-    max-width: 100%;
-    height: auto;
+
+img {
+  margin: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
-.menu{
-    margin-bottom: 100vh;
-    font-size:  125%;
+
+.menu {
+  margin-bottom: 100vh;
+  font-size: 125%;
 }
+
 .menu li {
-    margin-bottom: 1rem;
-}
-.container{
-    margin: 0 auto;
-    /* Para centrar margin 0 auto
-    y agregar width */
-    width: 80%;
-    height: 80vh;
-    background-color: #222;
-    border: medium solid #000;
-    
+  margin-bottom: 1rem;
 }
 
-.item{
-    padding: 1rem;
-   font-size: 1.25rem;
-   background-color: #666;
-   border: medium solid #999;
+.container {
+  margin: 0 auto;
+  /* Para centrar margin 0 auto
+    y agregar width */
+  width: 80%;
+  height: 80vh;
+  background-color: #222;
+  border: medium solid #000;
+}
+
+.item {
+  padding: 1rem;
+  font-size: 1.25rem;
+  background-color: #666;
+  border: medium solid #999;
 }
 
 /* Aquí comienza el codigo de la clase de Grid Css 2/17*/
-.grid-explicit{
-    /* Para activarlo */
-    display: grid;
-    /* Te permite definir el numero de columanas
+.grid-explicit {
+  /* Para activarlo */
+  display: grid;
+  /* Te permite definir el numero de columanas
     Puede llevar cualquier unidad de medida
    fracción (fr) el espacio sobrante */
-    /* Para definir las colunmas 5rem 38px 32 (significa tres columnas con estos valores)
+  /* Para definir las colunmas 5rem 38px 32 (significa tres columnas con estos valores)
     */
-    grid-template-columns: 2rem 20vh 30%;
+  grid-template-columns: 2rem 20vh 30%;
 
-    /* Fila, y 1fr, significa espacio sobrante  */
-    grid-template-rows: 50% 100px 1fr;
+  /* Fila, y 1fr, significa espacio sobrante  */
+  grid-template-rows: 50% 100px 1fr;
 
-    /*repeat para hacer patrones   */
-    /* Cinco  */
-    grid-template-columns: repeat(4, 20%);
-    /* el primero son las columnas y el valor auto es tamaño de la fila, para que se adapte al contenido  */
-    grid-template-rows: repeat(5, auto );
-    /* 
+  /*repeat para hacer patrones   */
+  /* Cinco  */
+  grid-template-columns: repeat(4, 20%);
+  /* el primero son las columnas y el valor auto es tamaño de la fila, para que se adapte al contenido  */
+  grid-template-rows: repeat(5, auto);
+  /* 
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(4, 1fr );
     */
-/* C: columna R: row */
+  /* C: columna R: row */
 
-/* Grid de 5x4, pero los del centro tenga mas espacio */
-grid-template-columns: 20% 30% 30% 20%;
-/* Or 
+  /* Grid de 5x4, pero los del centro tenga mas espacio */
+  grid-template-columns: 20% 30% 30% 20%;
+  /* Or 
 grid-template-colums: 20% repeat(2, 30%) 20% */
-grid-template-rows: repeat(5, auto);
+  grid-template-rows: repeat(5, auto);
 
-
-/* 
+  /* 
     grid-row-gap: ;
     Define el canal entre las filas de un contenedor de cuadrícula .*/
 
-/* el espacio entre las unidades*/
-column-gap: 1rem;
-row-gap: 1rem;
+  /* el espacio entre las unidades*/
+  column-gap: 1rem;
+  row-gap: 1rem;
 
-/* La función de las dos es
+  /* La función de las dos es
 grid-gap: 100px 0px 
 primer valor la distancia entre las filas,  y el segundo es para columnas */
 
-grid-gap: 100px 0px;
+  grid-gap: 100px 0px;
 
-/* Para no tener espaciado */
-gap: 0;
+  /* Para no tener espaciado */
+  gap: 0;
 }
+
 /* Curso Grid CSS: (3/17) Posicionamiento con Grid Lines */
 
-.grid-explicit .item:nth-child(10){
-    color: wheat;
-    /* 
+.grid-explicit .item:nth-child(10) {
+color: white;
+  /* 
     Define la posición de inicio de fila de un elemento de la cuadrícula . 
     grid-row-start */
+  /* 
+    Estas son las lineas de la cuadricula, el valor de fila, y columna (lineas)
+    */
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  background-color: blueviolet;
+}
 
+.grid-explicit .item:nth-child(19) {
+  grid-row-start: 5;
+  grid-row-end: 6;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  /* Atajo de las propiedades */
+  grid-row: 5/6;
+  grid-column: 3/5;
+  background-color: rgba(0, 0, 255, 0.418);
+  /*Atajo de grid-colum, grid-row 
+  grid-area: grid-row-start / grid-row-end / grid-column-start / grid-column-end
+  grid-area:  5/6 / 3/5 ; */
+
+
+
+}
+
+.grid-explicit .item:nth-child(13){
+    /* Abarca de la posición que te encuentras y suma el numero*/
+    grid-row: span 2;
+    grid-column:  span 2;
+    background-color: aquamarine;
+
+}
+.grid-explicit .item:nth-child(18){
+    grid-column: 3/5;
+    color: white;
+  background-color: brown;
 }
