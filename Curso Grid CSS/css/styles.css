@@ -170,7 +170,7 @@ primer valor la distancia entre las filas,  y el segundo es para columnas */
   display: grid;
   grid-template-columns: 1fr 200px;
   grid-template-rows: 100px repeat(2, 1fr) 60px;
-/* para tener tres filas */
+  /* para tener tres filas */
 
   /* Definimos las areas 
 "entre parentesis la filas" */
@@ -178,32 +178,45 @@ primer valor la distancia entre las filas,  y el segundo es para columnas */
   /* Cuando tiene otra fila, simplemente agrega otra fila de contenido */
     "header header"
     "content sidebar"
-
     /* para dejar un espacio vacío, se pone un . y lo interpreta como vacío  */
-      "content ."
+    "content ."
     "footer footer";
 }
 
 /* Debemos llamar a los elementos */
-.header{
-    /* El valor que definimos  */
-    grid-area: header;
-    background-color: #D0EAFF;
+.header {
+  /* El valor que definimos  */
+  grid-area: header;
+  background-color: #d0eaff;
 }
 
-
-.content{
-    grid-area: content;
-    background-color: #2BF07A;
+.content {
+  grid-area: content;
+  background-color: #2bf07a;
 }
 
-.sidebar{
-    grid-area: sidebar;
-    background-color: #E9FC1D;
+.sidebar {
+  grid-area: sidebar;
+  background-color: #e9fc1d;
 }
 
+.footer {
+  grid-area: footer;
+  background-color: red;
+}
 
-.footer{
-    grid-area: footer;
-   background-color:  red;
+/* La grid implicita */
+
+.grid-implicit {
+  /* 
+  El elemento comparte propiedades tanto de un elemento en línea como de un elemento de cuadrícula :
+
+  en línea porque el elemento se comporta como texto simple y se inserta en un bloque de texto
+  cuadrícula porque su elemento secundario se convertirá en elementos de flexbox
+  
+  display: inline-grid; */
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 200px);
 }
