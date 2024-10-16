@@ -216,9 +216,31 @@ primer valor la distancia entre las filas,  y el segundo es para columnas */
   
   display: inline-grid; */
 
-  display: grid;
+  display: inline-grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 200px);
 }
 /* Flujo de la grid */
 
+.grid-flow{
+  display: grid;
+  /* Grid de 5c x 4r */
+  grid-template-columns: repeat(5, 1fr) ;
+  grid-template-rows: repeat(3, 150px);
+
+  /*  
+  grid-auto-flow: ;
+
+  Define la posición de los elementos de la cuadrícula generados automáticamente   */
+  /* Valores 
+  grid-auto-flow: row; En esta configuración de dos columnas , el segundo elemento de la cuadrícula tiene dos columnas de ancho y el tercer elemento tiene cuatro filas de alto. Los demás elementos de la cuadrícula se colocan en filas adicionales . 
+  
+  grid-auto-flow: column; Los demás elementos de la cuadrícula se colocan en columnas adicionales .
+  
+  grid-auto-flow: dense; El algoritmo denso intenta colocar todos los demás elementos de la cuadrícula de manera que llenen todos los "huecos" de la cuadrícula.
+  
+  referencia visual https://cssreference.io/property/grid-auto-flow/ 
+  */
+  grid-auto-flow: column;
+  
+}
