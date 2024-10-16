@@ -220,3 +220,5 @@ primer valor la distancia entre las filas,  y el segundo es para columnas */
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 200px);
 }
+/* Flujo de la grid */
+
