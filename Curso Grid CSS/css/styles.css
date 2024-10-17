@@ -274,3 +274,8 @@ primer valor la distancia entre las filas,  y el segundo es para columnas */
   grid-row: span 3;
   grid-column: span 3;
 }
+
+.grid-layers{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
