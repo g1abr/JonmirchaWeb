@@ -222,10 +222,10 @@ primer valor la distancia entre las filas,  y el segundo es para columnas */
 }
 /* Flujo de la grid */
 
-.grid-flow{
+.grid-flow {
   display: grid;
   /* Grid de 5c x 4r */
-  grid-template-columns: repeat(5, 1fr) ;
+  grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(3, 150px);
 
   /*  
@@ -256,52 +256,126 @@ primer valor la distancia entre las filas,  y el segundo es para columnas */
   */
   grid-auto-flow: column;
   grid-auto-columns: 5px;
-  
 }
 /* Para aprovechar los espacios disponibles */
-.grid-flow-dense{
+.grid-flow-dense {
   display: grid;
 
   /* Grid de 5c x 4r  */
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(4, 150px) ;
+  grid-template-rows: repeat(4, 150px);
   grid-auto-flow: row dense;
-
 }
 
-.grid-flow-dense .item:nth-child(9){
+.grid-flow-dense .item:nth-child(9) {
   background-color: aquamarine;
   grid-row: span 3;
   grid-column: span 3;
 }
 
-.grid-layers{
+.grid-layers {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
+  grid-auto-flow: column;
 }
 
-.grid-layers .item:nth-child(1){
-  background-color: #DCEA33 ;
-  grid-column: 1 / 3 ;
+.grid-layers .item:nth-child(1) {
+  background-color: #dcea33;
+  grid-column: 1 / 3;
   grid-row: 1/3;
 }
-.grid-layers .item:nth-child(2){
-  background-color: #497BF8 ;
+.grid-layers .item:nth-child(2) {
+  background-color: #497bf8;
   grid-column: 3/5;
   grid-row: 1/3;
 }
-.grid-layers .item:nth-child(3){
-  background-color: #84D567 ;
-  grid-column: 1 / 3 ;
+.grid-layers .item:nth-child(3) {
+  background-color: #84d567;
+  grid-column: 1 / 3;
   grid-row: 3/5;
 }
-.grid-layers .item:nth-child(4){
-  background-color: #CD7F24 ;
-  grid-column: 3 / 5 ;
+.grid-layers .item:nth-child(4) {
+  background-color: #cd7f24;
+  grid-column: 3 / 5;
   grid-row: 3/5;
 }
-.grid-layers .item:nth-child(5){
-  background-color: #C929F0 ;
+.grid-layers .item:nth-child(5) {
+  background-color: #c929f0;
+  grid-column: 2 /4;
+  grid-row: 2/4;
+}
+.grid-order {
+  display: grid;
+  /* Grid de 3c X 2r */
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.grid-order .item:nth-child(1) {
+  order: 2;
+  background-color: violet;
+}
+.grid-order .item:nth-child(2) {
+  order: 4;
+  background-color: #497bf8;
+}
+.grid-order .item:nth-child(3) {
+  order: 2;
+  background-color: #d0eaff;
+}
+.grid-order .item:nth-child(4) {
+  order: 5;
+  background-color: #84d567;
+}
 
+.grid-order .item:nth-child(5) {
+  order: -1;
+  background-color: aquamarine;
+}
+
+/* Alineamiento de Grid Items  */
+
+.grid-align {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: repeat(2, 200px);
+  /* Propiedad para el alinamiento de los item
+  justify-items: ;
+  valores :
+  strech - por defecto 
+  start
+  end
+  center  
+  */
+  /* Justify-item alinea mis elementos grid en el eje  horizontal (X) */
+  justify-items: center;
+
+  /* align-items: alinea mis elementos grid en el eje vertical (Y) */
+  align-items: end;
+}
+
+.grid-align .item:nth-child(1) {
+  background-color: #2bf07a;
+align-self: start;
+}
+
+.grid-align .item:nth-child(2) {
+  background-color: #497bf8;
+}
+
+.grid-align .item:nth-child(3) {
+  background-color: #cd7f24;
+  align-self: stretch;
+  justify-self: end;
+}
+
+.grid-align .item:nth-child(4) {
+  background-color: #c929f0;
+  justify-self: center;
+  align-self: start;
+}
+
+.grid-align .item:nth-child(5) {
+  background-color: #d0eaff;
+  align-self: center;
 }
