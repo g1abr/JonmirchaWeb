@@ -364,7 +364,7 @@ align-self: start;
 }
 
 .grid-align .item:nth-child(3) {
-  background-color: #cd7f24;
+  background-color: #cd7e24d0;
   align-self: stretch;
   justify-self: end;
 }
@@ -378,4 +378,43 @@ align-self: start;
 .grid-align .item:nth-child(5) {
   background-color: #d0eaff;
   align-self: center;
+}
+
+
+/* Alineamiento de Grid Tracks */
+
+.grid-align-tracks{
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: repeat(2, 200px);
+  /* Justify-content alinea los tracks grid en el eje horizontal (X) */
+  justify-content: end;
+  
+/* Align-content alinea los tracks de la grid en el eje vertical (Y) */
+  align-content: end;
+
+}
+
+.grid-align-tracks .item:nth-child(1) {
+  background-color: #2bf07a;
+
+}
+
+.grid-align-tracks .item:nth-child(2) {
+  background-color: #497bf8;
+}
+
+.grid-align-tracks .item:nth-child(3) {
+  background-color: #cd7e24d0;
+
+}
+
+.grid-align-tracks .item:nth-child(4) {
+  background-color: #c929f0;
+
+}
+
+.grid-align-tracks .item:nth-child(5) {
+  background-color: #d0eaff;
+
 }
