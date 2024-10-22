@@ -54,11 +54,15 @@ img {
   border: medium solid #000;
 }
 
-.item {
+.item , .sub-item{
   padding: 1rem;
   font-size: 1.25rem;
   background-color: #666;
   border: medium solid #999;
+}
+.sub-item{
+  background-color: #c929f0;
+  border: medium solid brown;
 }
 
 /* Aquí comienza el codigo de la clase de Grid Css 2/17*/
@@ -388,10 +392,10 @@ align-self: start;
   grid-template-columns: repeat(3, 200px);
   grid-template-rows: repeat(2, 200px);
   /* Justify-content alinea los tracks grid en el eje horizontal (X) */
-  justify-content: end;
+  justify-content: space-evenly;
   
 /* Align-content alinea los tracks de la grid en el eje vertical (Y) */
-  align-content: end;
+  align-content:space-evenly;
 
 }
 
@@ -418,3 +422,70 @@ align-self: start;
   background-color: #d0eaff;
 
 }
+
+/*  Permite tener maximos o minimos tamaños para cada uno de los tracks  */
+.grid-min-max{
+  display: grid;
+/* Grid de 4c x ? */
+/* Tipo redes sociales como insta, con scroll en tus publicaciones */
+
+grid-template-columns: repeat(4, 1fr);
+                              /* Tamaño minimo  y maximo   */
+grid-template-columns: repeat(4, minmax(100px, 200px));
+
+/* Hay dos valores que le podemos asignar  */
+
+/* Quiero que el tamaño minimo sea igual al minimo contenido que tenga los tracks*/
+grid-template-columns: repeat(4, min-content, 200px);
+
+grid-template-columns: repeat(4, 100px, min-content);
+
+grid-template-rows: repeat(4, 100px,max-content);
+grid-template-rows: reapeat( 4, max-content, 100px); 
+
+}
+
+.grid-repeat{
+  display: grid;
+  /* Grid de  4c x 4*/
+  /* Que la columna opcupe tal valor  */
+  grid-template-columns: repeat(1, 10% 20% 30% 40%);
+  grid-template-rows: repeat(2, 100px 300px);  
+  
+/* Para la grid de la implicita  */
+grid-auto-rows:150;
+grid-auto-rows: repeat(2, 100px 300px) ;
+
+  /* Primera fila con valor 100px y la segunda 200px */
+}
+
+/* Grid dinamicas */
+.grid-dynamics{
+  display: grid;
+  /*auto-fill  Rellena la grid con tracks generados dinamicamente  */
+  grid-template-columns: repeat(auto-fill, 100px);
+
+  /* auto-fit  Ajusta la grid con tracks generados dinámicamente */
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 1vw ;
+
+  grid-template-columns: repeat(auto-fit(minmax(100px, 1fr)));
+}
+
+/*  */
+.grid-responsive{ 
+  display: grid;
+  /* Se va repetir tantas columnas como lo necesites, y el tamaño maximo lo que pueda */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr )) ;
+
+  /* la separación  */
+  /* gap: 1vh 1vw;
+  gap: 1vw ;
+   */
+}
+.grid-nested{
+  display: grid;
+  /* Grid de 3c x? */
+  grid-template-columns: repeat(3, 1fr);
+  }
+
