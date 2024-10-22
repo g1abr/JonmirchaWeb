@@ -489,3 +489,10 @@ grid-auto-rows: repeat(2, 100px 300px) ;
   grid-template-columns: repeat(3, 1fr);
   }
 
+
+  /* GRID PADRE*/
+.grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
