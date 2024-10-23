@@ -1,0 +1,60 @@
+*::after , *::before{
+    box-sizing: border-box;
+}
+
+
+body{
+    margin: 0;
+    background: #654ea3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #eaafc8, #654ea3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #eaafc8, #654ea3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+h1, h2, h3, h4 {
+    text-align: center;
+
+}
+h1::selection, 
+h2::selection, 
+h3::selection, 
+h4::selection, 
+h5::selection, 
+h6::selection{
+    background-color: #eaafc8;
+    color: aliceblue; 
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) ;
+    grid-template-rows: repeat(2, auto);
+   
+    margin-left: 12px;
+    margin-right: 12px;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+.item{
+    padding: 15px; 
+    gap: 3px 33px;
+    background-color: aliceblue;
+}
+.color-by-name{
+   border: 2px solid blueviolet;
+   padding: 15px;
+}
+/* Sistema Hexadecimal
+0 1 2 3 4 5 6 7 8 9 A B C D E F 
+
+RGB "red green blue"  (Medios Digitales) VS CMYK "cyan magenta yellow key black" (Medios Impresos)
+
+
+*/
+
+.color-by-hexadecimal{
+    border: 3px solid #eaafc8 ;
+}
+.color-by-rgb{
+    border: 2px solid rgb(142, 68, 173 );
+    ;
+}
+
