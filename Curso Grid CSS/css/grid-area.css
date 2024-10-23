@@ -1,0 +1,86 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  *,
+  *::after,
+  *::before {
+    box-sizing: inherit;
+  }
+
+body{
+    /* para quitar los espacios  */
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, auto);
+
+    grid-template-areas:
+    " header  header  header         header       header    header " 
+    "nav        nav       nav              nav             nav          nav " 
+    "uc-left   uc-left   uc-center    uc-center   uc-right   uc-right"
+    "middle  middle   middle        lower         lower       lower"
+    "footer  footer    footer          footer         footer      footer"    ;
+}
+
+body>*{
+    border: 1px solid salmon ;
+}
+h2{
+    text-align: center;
+    color: white;
+}
+.header{
+  
+    background-color: rgb(255, 166, 0);
+    grid-area: header;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: rgb(255, 166, 0);
+}
+.nav{
+    background-color: rgb(94, 255, 1);
+   grid-area: nav; 
+}
+.uc-left{
+    background-color: rgb(32, 84, 255);    
+      grid-area: uc-left; 
+        
+    }
+.uc-center{
+    background-color: #25ffbe;
+  grid-area: uc-center; 
+}    
+.uc-right{
+    background-color: blueviolet;
+    grid-area: uc-right; 
+}
+.middle{
+    background-color: blanchedalmond;
+    grid-area: middle;
+}
+.lower{
+    background-color: darkmagenta;
+    grid-area: lower;
+}
+
+@media screen and (min-width: 1024px) {
+    body{
+        gap: 12px;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas:
+        " header  header  header        header       header" 
+        "nav        uc-left       uc-center     uc-center       uc-right   " 
+        "nav  middle   middle     middle   middle    "
+        "nav   lower         lower     lower         lower "
+        "footer  footer    footer          footer         footer"    ;
+    }
+}
