@@ -9,18 +9,26 @@
     <!-- Animaciones para el scroll-->
   </head>
   <body>
-    <h1>Short n' Sweet - Sabrina Carpenter </h1>
-    <p>Songs and lyrics</p>
-    <h2 id="temario-css">Temario del Curso</h2>
-
+<section id="temario-css">
+    <h2>Temario del Curso</h2>
     <ul>
-        <li><a href="#selectores-basicos">Bed Chem</a></li>
-        <li><a href="#selectores-avanzados">Listar Canciones</a></li>
+      <li><a href="index.html#selectores-basicos">Selectores Básicos</a></li>
+      <li><a href="index.html#selectores-avanzados">Selectores Avanzados</a></li>
+      <li><a href="index.html#pseudoclases">Pseudoclases</a></li>
+      <li><a href="index.html#pseudoelementos">Pseudoelementos</a></li>
+      <li><a href="index.html#agrupar-selectores">Agrupar Selectores</a></li>
+      <li><a href="index.html#algoritmo-css">El Algoritmo de CSS</a></li>
+      <li><a href="index.html#reseteo-normalizacion">Reseteo y Normalización de Estilos</a></li>
+      <li><a href="index.html#prefijos-navegadores">Prefijos de los Navegadores</a></li>
+      <li><a href="modelcaja.html" target="_blank">Modelo de Caja</a></li>
+      <li><a href="position.html" target="_blank">Posicionamiento en CSS</a></li>
+      <li><a href="cabeceraFixe-vsCabecera-sticky.html" target="_blank">Ejercicios de Posicionamiento CSS</a></li>
+     
     </ul>
-    <hr>
-
-    <article  id="selectores-basicos">
+</section>
+    <article id="selectores-basicos">
         <h2>Short n' Sweet</h2>
+        
         <h2 class="title-song">Bed Chem</h2>
         <p>I was in a sheer dress the day that we met
             We were both in a rush, we talked for a sec
@@ -80,9 +88,9 @@
                 
                 (A little fade out?)</p>
 
-        <a href="#temario-css">⬆️</a>
+                <a href="index.html#temario-css">☝️</a>
     </article>
-   
+
     <hr>
     <article id="selectores-avanzados">
         <h2 class="title-song">Listar canciones</h2>
@@ -134,35 +142,33 @@
             <li><b>Feather</b></li>
             <li><b>Nonsense</b></li>
         </ul>
+        <nav class="selectores-atributos">
+            <ul>
+                <li><a href="#" targer="_blank">Home</a></li>
+                <li><a href="#" targer="_blank">Songs</a></li>
+                <li><a href="#" targer="_blank">Acerca </a></li>
+                <li><a href="#" targer="_blank">Blog</a></li>
+                <li><a href="#" targer="_blank">Notas</a></li>
+                <li><a href="#" targer="_blank">Discografía</a></li>
+            
+            </ul>
+        </nav>
+    
+        <h3>Selector Universal(*)</h3>
+    
+     <ul class="selector-universal">
+                <li><b>Espresso</b></li>
+                <li><b>Good Graces</b></li>
+                <li><b>Sharpest Tool</b></li>
+                <li><b>Don't Smile</b></li>
+                <li><b>Feather</b></li>
+                <li><b>Nonsense</b></li>
+            </ul>
 
-
-        <a href="#temario-css">⬆️</a>
+        <a href="index.html#temario-css">☝️</a>
+       
     </article>
-
-    <nav class="selectores-atributos">
-        <ul>
-            <li><a href="#" targer="_blank">Home</a></li>
-            <li><a href="#" targer="_blank">Songs</a></li>
-            <li><a href="#" targer="_blank">Acerca </a></li>
-            <li><a href="#" targer="_blank">Blog</a></li>
-            <li><a href="#" targer="_blank">Notas</a></li>
-            <li><a href="#" targer="_blank">Discografía</a></li>
-        
-        </ul>
-    </nav>
-
-    <h3>Selector Universal(*)</h3>
-
- <ul class="selector-universal">
-            <li><b>Espresso</b></li>
-            <li><b>Good Graces</b></li>
-            <li><b>Sharpest Tool</b></li>
-            <li><b>Don't Smile</b></li>
-            <li><b>Feather</b></li>
-            <li><b>Nonsense</b></li>
-        </ul>
-
-       <hr>
+    <hr>
 
     <article id="pseudoclases">
        <h2>Pseudoclases</h2>
@@ -175,44 +181,47 @@
 
        </form>
 
+       <hr>
+       <nav class="menu-pseudoclases">
+           <a href="">1</a>
+           <a href="">2</a>
+           <a href="">3</a>
+           <a href="">4</a>
+          
+       </nav>
+   
+       <ol class="lista-pseudoclases" type="A">
+           <li>Mú de Aires</li>
+           <li>Aldebarán de Tauro</li>
+           <li>Saga & Kanon de Géminis</li>
+           <li>Death Mask de Cáncer</li>
+           <li>Aioria de Leo</li>
+           <li>Shaka de Virgo</li>
+           <li>Dohko de Libra</li>
+           <li>Milo de Escorpión</li>
+           <li>Aioros de Sagitario</li>
+           <li>Shura de Capricornio</li>
+           <li>Camus de Acuario</li>
+           <li>Afrodita de Piscis</li>
+       </ol> 
+   
+    <article class="articulo-pseudoclases">
+       <header>Esto  es una header</header>
+       <p>Esto es un parrafo</p>
+       <div>Esto es un div</div>
+       <p>Esto es un parrafo</p>
+       <section>Esto es una section</section>
+       <p>Esto es un parrafo</p>
+       <div>Esto una div</div>
+       <p>Esto es un parrafo</p>
+       <footer>Esto es un footer</footer>
+   
+       </article>
+       <a href="index.html#temario-css">☝️</a>
+    
     </article>
 
     <hr>
-    <nav class="menu-pseudoclases">
-        <a href="">1</a>
-        <a href="">2</a>
-        <a href="">3</a>
-        <a href="">4</a>
-       
-    </nav>
-
-    <ol class="lista-pseudoclases" type="A">
-        <li>Mú de Aires</li>
-        <li>Aldebarán de Tauro</li>
-        <li>Saga & Kanon de Géminis</li>
-        <li>Death Mask de Cáncer</li>
-        <li>Aioria de Leo</li>
-        <li>Shaka de Virgo</li>
-        <li>Dohko de Libra</li>
-        <li>Milo de Escorpión</li>
-        <li>Aioros de Sagitario</li>
-        <li>Shura de Capricornio</li>
-        <li>Camus de Acuario</li>
-        <li>Afrodita de Piscis</li>
-    </ol> 
-
- <article class="articulo-pseudoclases">
-    <header>Esto  es una header</header>
-    <p>Esto es un parrafo</p>
-    <div>Esto es un div</div>
-    <p>Esto es un parrafo</p>
-    <section>Esto es una section</section>
-    <p>Esto es un parrafo</p>
-    <div>Esto una div</div>
-    <p>Esto es un parrafo</p>
-    <footer>Esto es un footer</footer>
-
-    </article>
 
 
    <article id="pseudoelementos">
@@ -225,9 +234,10 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quidem officia, laudantium ut provident, reiciendis, ratione consectetur sequi sint accusantium sapiente non inventore eligendi commodi labore laborum error nisi ad?
         </p>
 
+        <input type="text" class="input-pseudoelementos" placeholder="Escribe tu nombre"> 
+        <a href="index.html#temario-css">☝️</a>
     </article>
 
- <input type="text" class="input-pseudoelementos" placeholder="Escribe tu nombre"> 
 
      <hr>
     <section id="agrupar-selectores">
@@ -240,20 +250,23 @@
 
 
         </form>
-    </section> 
-     <section id="songs">
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/K3xmRF8ab1o?si=Mqp3C6lzpMIt2Dby&amp;start=14143"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen
-      ></iframe>
-     </section>
+<hr> <br>
 
+        <section id="songs">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/K3xmRF8ab1o?si=Mqp3C6lzpMIt2Dby&amp;start=14143"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+           </section>
+    </section> 
+   
+<hr>
      <article id="algoritmo-css">
       <h2>El algoritmo de css</h2>
       <ol>
@@ -261,13 +274,17 @@
         <li>La especificidad</li>
         <li>La herencia</li>
       </ol>   
+                
+           <blockquote id="cita-marco" class="cita-marco">
+            Sé tolerante con los demás y estricto contigo mismo -
+            <cite>Marco Aurelio</cite>
+          </blockquote>
+          <a href="index.html#temario-css">☝️</a>
     </article>
     
 
-     <blockquote id="cita-marco" class="cita-marco">
-      Sé tolerante con los demás y estricto contigo mismo -
-      <cite>Marco Aurelio</cite>
-    </blockquote>
+
+
 
     <section id="prefijos-navegadores">
         <h2>Prefijos de los navegadores
@@ -277,6 +294,7 @@
                 <li>Todos los demás navegadores - <code><b>webkit</b></code></li>
             </ul>
         </h2>
+        <a href="index.html#temario-css">☝️</a>
     </section> 
 
 

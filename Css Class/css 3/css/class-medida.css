@@ -57,7 +57,13 @@ h6::selection{
 
 
 }
-
+.a{
+  text-decoration: none;
+  color: aliceblue;
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+}
 
 /*  
 Unidades de medida
@@ -81,7 +87,14 @@ Unidades de medida
 .pixels{
   background-color: #c471ed;
   color: aliceblue;
-  font-size: 1.5rem;
+  font-size: 20px;
   border: thin #000 solid;
   /* text-shadow: 10px 10px  #cccccc60; */
+}
+
+.ems{
+  background-color: #f80759;
+  color: whitesmoke;
+  font-size: 1.2em;
+  text-align: right;
 }

@@ -42,6 +42,9 @@ p {
     background: #2193b0;
    
 } */
+#temario-css:target {
+  background-color: lightgreen;
+}
 
 #parrafo-uno {
   background-image: url(../img/image\ 3.png);
