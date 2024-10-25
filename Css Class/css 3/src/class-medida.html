@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,75 +8,92 @@
     <link rel="shortcut icon" href="../img/image 3.png" type="image/x-icon" />
     <link rel="stylesheet" href="../css/class-medida.css">
 </head>
+
 <body>
-    <h1 style="color: aliceblue; ">Unidades de medida css   <a href="temario.html#temario-css" style="text-decoration: none; text-shadow: 15px 15px white;">☝️</a></h1>
-    <a href="https://codebeautify.org/px-to-point-converter" class="a" >Convertir</a>
+    <h1 style="color: aliceblue; ">Unidades de medida css <a href="temario.html#temario-css"
+            style="text-decoration: none; text-shadow: 15px 15px white;">☝️</a></h1>
+    <a href="https://codebeautify.org/px-to-point-converter" class="a">Convertir</a>
     <br>
-  
+
     <main class="conteiner">
-   
-      
+
+
         <article class="item pixels">
             <h2>Pixels (px)</h2>
-            <p>Un píxel o pixel, ​ plural píxeles o pixeles es, en informática, la unidad mínima que forma una imagen digital. Esta imagen puede ser mostrada e interpretada por el hardware de un ordenador, por ejemplo, mediante un monitor o una impresora.</p>
+            <p>Un píxel o pixel, ​ plural píxeles o pixeles es, en informática, la unidad mínima que forma una imagen
+                digital. Esta imagen puede ser mostrada e interpretada por el hardware de un ordenador, por ejemplo,
+                mediante un monitor o una impresora.</p>
         </article>
         <article class="item ems">
             <h2>Ems </h2>
-            <p>Son unidades relativas, así que más exactamente 1 em equivale al cien por cien del tamaño inicial de fuente. Si el usuario ha configurado su navegador para que el tamaño de fuente inicial sea 20 píxeles, entonces éste será el tamaño de 1 em.</p>
+            <p class="ems-child">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p>Son unidades relativas, así que más exactamente 1 em equivale al cien por cien del tamaño inicial de
+                fuente. Si el usuario ha configurado su navegador para que el tamaño de fuente inicial sea 20 píxeles,
+                entonces éste será el tamaño de 1 em.</p>
         </article>
-        <article class="item">
-            <h2>3</h2>
+        <article class="item rems">
+            <h2>Rems</h2>
+            <P>Es muy similar a em, con la única diferencia de que no es escalable, esto quiere decir que no depende del
+                elemento padre, sino del elemento raíz del documento, el elemento HTML. Rem significa «Root Em«, o sea,
+                es un em basado en la raíz </P>
+
+
         </article>
-        <article class="item">
-            <h2>4</h2>
+        <article class="item exs">
+            <h2>Exs (ex)</h2>
+            <p> Es relativa a la altura de la «x» del elemento. También se conoce por ser más o menos la mitad del
+                tamaño de la fuente del navegador o 0.5em.</p>
         </article>
-        <article class="item">
-            <h2>5</h2>
+        <article class="item ch-parents">
+            <h2>CHS (ch) </h2>
+            <div class="chs">
+                <p> Esta unidad se llama Charrière y abreviado Ch. Son sinónimos de Ch las unidades French (FR) y French
+                    Gauge (FG). Los calibres disponibles suelen ir escalonados en pares, de dos en dos. </p>
+            </div>
         </article>
-        <article class="item">
-            <h2>6</h2>
+        <article class="item porcentaje">
+            <h2>Porcentaje (%)</h2>
+            <p>Es una unidad de medida que se representa con el símbolo % y se utiliza para expresar una cantidad como
+                una fracción de 100 partes iguales. También se le conoce como tanto por ciento, que significa "de cada
+                cien unidades"</p>
+
+            <section class="flex">
+                <div> Caja de Bloque</div>
+                <span>Caja de Línea</span>
+            </section>
+
         </article>
-        <article class="item">
-            <h2>7</h2>
+        <article class="item vws">
+            <h2>Viewport Width (vw)</h2>
+            <p>Viewport Width (ancho del dispositivo). Funciona como las unidades de porcentaje, especificar 10vw es
+                equivalente a ocupar 10% del ancho visible de la pantalla</p>
         </article>
-        <article class="item">
-            <h2>8</h2>
-        </article>
-        <article class="item">
-            <h2>9</h2>
-        </article>
-        <article class="item">
-            <h2>10</h2>
-        </article>
-        <article class="item">
-            <h2>11</h2>
-        </article>
-        <article class="item">
-            <h2>12</h2>
-        </article>
-        <article class="item">
-            <h2>13</h2>
-        </article>
-        <article class="item">
-            <h2>14</h2>
-        </article>
-        <article class="item">
-            <h2>15</h2>
-        </article>
-        <article class="item">
-            <h2>16</h2>
-        </article>
-        <article class="item">
-            <h2>17</h2>
-        </article>
-        <article class="item">
-            <h2>18</h2>
-        </article>
-        <article class="item">
-            <h2>19</h2>
+        <article class="item vh">
+            <h2>Viewport Height(Altura del Dispositivo)
+                <p>También funciona como porcentaje, especificar 10vh es equivalente a ocupar 10% de la altura visible
+                    de la pantalla. Mira esta demostración.? Si miras cuidadosamente puedes ver que 50vh significa 50%,
+                    lo que cubrirá el 50% de la altura de la pantalla.</p>
+            </h2>
         </article>
     </main>
- 
-   
+    <div>
+        <h2>Viewport Units</h2>
+        <section class="viewport">Son una forma de dimensionar y posicionar elementos según las dimensiones de una
+            ventana gráfica, o el área de una ventana del navegador donde se muestra el contenido web Son relativos a la
+            altura y el ancho de la ventana gráfica y pueden ayudar a mejorar la experiencia del usuario en diferentes
+            dispositivos y tamaños de pantalla.</section>
+        <section class="vmin">
+            <h2>vmin</h2>
+            <p> Es la dimensión más pequeña de la ventana gráfica.</p>
+        </section>
+
+        <section class="vmax">
+            <h2>vmax</h2>
+            <p> La dimensión más grande de la ventana gráfica.</p>
+        </section>
+
+    </div>
+
 </body>
+
 </html>

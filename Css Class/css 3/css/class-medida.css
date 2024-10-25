@@ -1,5 +1,5 @@
-html{
-    box-sizing: border-box;
+html {
+  box-sizing: border-box;
 }
 
 *::after,
@@ -9,55 +9,61 @@ html{
 
 body {
   margin: 0;
-  background: #12c2e9; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #f64f59,
-    #c471ed,
-    #12c2e9
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #f64f59,
-    #c471ed,
-    #12c2e9
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-h1, h2, h3, h4 {
-    text-align: center;
-    cursor: pointer;
-
-}
-h1::selection, 
-h2::selection, 
-h3::selection, 
-h4::selection, 
-h5::selection, 
-h6::selection{
-    background-color: #eaafc8;
-    color: aliceblue; 
-}
-.conteiner{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr) ;
-    grid-template-rows: repeat(auto-fill);
-   
-    margin-left: 12px;
-    margin-right: 12px;
-    column-gap: 20px;
-    row-gap: 20px;
-    margin-top: 12px;
+  background: #12c2e9;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right,
+      #f64f59,
+      #c471ed,
+      #12c2e9);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right,
+      #f64f59,
+      #c471ed,
+      #12c2e9);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.item{
-    padding: 15px; 
-    gap: 3px 33px;
-    background-color: aliceblue;
-    border-radius: 2%;
-
+h1,
+h2,
+h3,
+h4 {
+  text-align: center;
+  cursor: pointer;
 
 }
-.a{
+
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+h6::selection {
+  background-color: #eaafc8;
+  color: aliceblue;
+}
+
+.conteiner {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(auto-fill);
+
+  margin-left: 12px;
+  margin-right: 12px;
+  column-gap: 20px;
+  row-gap: 20px;
+  margin-top: 12px;
+}
+
+.item {
+  padding: 15px;
+  gap: 3px 33px;
+  background-color: aliceblue;
+  border-radius: 2%;
+  color: whitesmoke;
+
+}
+
+.a {
   text-decoration: none;
   color: aliceblue;
   display: block;
@@ -84,17 +90,121 @@ Unidades de medida
 */
 /* Pixeles */
 
-.pixels{
+.pixels {
   background-color: #c471ed;
-  color: aliceblue;
+
   font-size: 20px;
   border: thin #000 solid;
   /* text-shadow: 10px 10px  #cccccc60; */
 }
 
-.ems{
+.ems {
   background-color: #f80759;
-  color: whitesmoke;
+
   font-size: 1.2em;
   text-align: right;
+}
+
+.ems-child {
+  background-color: #12c2e9;
+  text-align: start;
+  font-size: 0.90em;
+}
+
+.rems {
+  background-color: #acb6e5;
+  font-size: 1.2rem;
+}
+
+.exs {
+  font-size: 3ex;
+  background-color: #2ebf91;
+}
+
+/* La overflowpropiedad especifica si se debe recortar el contenido o agregar barras de desplazamiento cuando el contenido de un elemento es demasiado grande para caber en el área especificada.
+
+La overflowpropiedad tiene los siguientes valores:
+
+visible- Predeterminado. El desbordamiento no se recorta. El contenido se muestra fuera del cuadro del elemento.
+hidden- El desbordamiento se recorta y el resto del contenido será invisible.
+scroll- Se recorta el desbordamiento y se agrega una barra de desplazamiento para ver el resto del contenido.
+auto- Similar a scroll, pero agrega barras de desplazamiento solo cuando es necesario */
+/* ch */
+.chs {
+  background-color: #8360c3;
+  /* Para formularios podria usar un ch red */
+  border: 1ch solid #f80759;
+  font-size: 2ch;
+  /* https://www.w3schools.com/css/css_overflow.asp */
+  overflow: hidden;
+  padding-left: 2ch;
+}
+
+.ch-parents {
+  background-color: #8360c3;
+}
+
+.porcentaje {
+  background-color: #89216B;
+  border: 2px solid #f8e800;
+
+}
+
+.porcentaje div {
+  background-color: #acb6e5;
+  margin: 4%;
+  padding: 2%;
+  width: 50%;
+  text-align: center;
+
+}
+
+.porcentaje span {
+  background-color: #b380a4;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+
+}
+
+/* La altura del contenido esta delimitado por el tamaño del contenido  */
+
+.vws {
+  background: #03001e;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ec38bc, #7303c0, #03001e);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ec38bc, #7303c0, #03001e);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/* width: 12vw; */
+}
+.vh{
+  background-color: #bf802e;
+  /* width: 25vh; */
+  font-size: 9px;
+  
+}
+.viewport {
+/* Recuerda que la etiqueta body tiene margenes por defecto  y recuerda que las barras de scroll dek navegador tambien forma parte del viewport */
+
+  margin-left: 2vh;
+  background: linear-gradient(to right, #ffdde1, #ee9ca7);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+  width: 50vw;
+}
+
+.vmin,
+.vmax {
+  background: #ee9ca7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  border: thick solid #FF0099;
+  width: 50vmax;
+  height: 50vmin;
 }
