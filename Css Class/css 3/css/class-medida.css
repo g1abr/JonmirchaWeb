@@ -208,3 +208,25 @@ auto- Similar a scroll, pero agrega barras de desplazamiento solo cuando es nece
   width: 50vmax;
   height: 50vmin;
 }
+/* Recomendaciones Jonh Mircha 
+ Recomendaciones Jonh Mircha 
+La medidas absolutas, si tienes que diseñar los estilos para cuando una pagina se vaya a imprimir, hay te conviene usar cm, pc mm, in , q, px
+
+Las unidades relativas: recomienda que al documento HTML le definas en px (font-size: defínelo en px) 
+
+Todo lo que es tipografía en rem (hace referencia al tamaño del elemento raíz "HTML" )
+
+para aplicar distancias, de padding, margin nos sugiere rem 
+
+Cuando utilizar em cuando quieras tarjetas grande, pequeña, mediana, y que el espacio sea proporcional usar los em  
+
+Cuando utilizar ex para cuando sabes cuantos reglones vas a recibir 
+
+Usar % para el diseño responsivo, y mas el la definición de ancho y alto de ciertas secciones en tu contenido
+
+
+Cuando utilizar las propiedades del Viewport  
+
+Para hacer una hiro img, para tener texto fluido 
+
+*/

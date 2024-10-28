@@ -1,0 +1,135 @@
+html {
+    box-sizing: border-box;
+}
+
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    background: #7f7fd5;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right,
+            #91eae4,
+            #86a8e7,
+            #7f7fd5);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right,
+            #91eae4,
+            #86a8e7,
+            #7f7fd5);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: white;
+    text-align: center;
+
+}
+
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+h6::selection {
+    background-color: pink;
+
+}
+.a::selection{
+    background-color: var(--bg-primary);
+}
+/* variables globales 
+Usamos la pseudo clase 
+:root (hace referencia a la etiqueta html, pero con la diferencia de mayor peso)
+*/
+
+:root{
+    --bg-primary: #A7BFE8;
+    --bg-secon: #4A00E0;
+}
+
+
+.a {
+    text-decoration: none;
+    color: aliceblue;
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Variables Css
+  
+  Las variables deben definirse dentro de un selector 
+  Podemos almacenar cualquier cosa 
+
+La existencia de la variable es en su selector raíz y se extiende a sus hijos  */
+
+.custom-props-1 {
+    /* Declara una variable en css
+    -- 
+     */
+    --primary-color: #4568DC;
+
+    background-color: var(--primary-color);
+}
+
+.custom-props-2 {
+background: var();
+    --secon-color: #B06AB3;
+/* Tambien se puede declarar una variable dentro de la etiqueta style en un elemento  
+En la etiqueta style del elemto se definio la variable. 
+*/
+    border: thin solid var(--border-color);
+    --padding: 1rem;
+    padding: var(--padding);
+}
+
+.custom-props-3 {
+    --error-text: #c31432;
+    /* nombre variable no la propiedad */
+    --fonfont-size: small;
+    /* Para utilizar una variable  */
+
+    border: thin solid var(--border-color);
+    padding: var(--padding);
+
+
+
+}
+
+.title-props {
+    /*La funcion VAR recibe   un segundo parametro, Si por alguna razon no detecta el valor de la variable, el segundo valor es por defecto  */
+    color: var(--secon-color, blue)
+}
+
+/* Funciones  */
+
+.url{
+    background-image: url(../img/circulo.png);
+}
+
+/* calc red */
+.ch-10{
+    --padding-size: 2ch;
+    --num-ch: 10ch;
+    background-color: var(--bg-secon);
+    font-size: 2rem;
+    padding: 1ch;
+/* Tengo que dejar  espacio entre el operador  y los operandos */
+    width: calc(var(--num-ch) + var(--padding-size) * 2);
+    
+    color: white;
+    border-radius: 2%;
+}
+
+.min-max{
+    background-color: var(--primary-color);
+}
