@@ -131,5 +131,14 @@ En la etiqueta style del elemto se definio la variable.
 }
 
 .min-max{
-    background-color: var(--primary-color);
+    background-color: #4568DC;
+    width: min(300px, 20vw);  /* Usa el menor valor entre 100% y 600px */
+    height: max(200px, 25vh); /* Usa el mayor valor entre 200px y 50vh */
+}
+
+/* red clam */
+/* Valores: Tamaño minimo, tamaño ideal, tamaño maximo */
+
+h3{
+    font-size: clamp(1rem, 1rem + 3vw, 8rem);
 }

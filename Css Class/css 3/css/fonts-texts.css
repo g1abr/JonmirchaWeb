@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Kablammo&display=swap');
+html{
+    box-sizing: border-box;
+}
+*::after, 
+*::before{
+    box-sizing: inherit;
+}
+body{
+    background: #4ECDC4;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #556270, #4ECDC4);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #556270, #4ECDC4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--color-white);
+    text-align: center;
+
+}
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+h6::selection {
+    background-color: #c0c0aa;
+
+}
+:root{
+    --color-text: #000;
+    --color-white: white;
+    --bg-container: (to right, #7BC6CC, #BE93C5);  
+    /* background: linear-gradient(to right, #7BC6CC, #BE93C5);  */
+    
+}
+.container{
+   
+    
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: repeat(auto-fill);
+    margin-left: 12px;
+    margin-right: 12px;
+    column-gap: 20px;
+    row-gap: 20px;
+    margin-top: 12px;
+}
+.item {
+    padding: 15px;
+    gap: 3px 33px;
+    background: #BE93C5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #7BC6CC, #BE93C5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #7BC6CC, #BE93C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 2%;
+    color: whitesmoke;
+  
+  }
+  
+
+  /* red
+  font-family
+  font-size
+  font-weight
+  font-style
+  font-variant
+  line-height red la altura de linea (interlineado)
+  */
+
+.font{
+    /*  */
+    font-family: "Kablammo", system-ui;
+      color: red;
+    /* Define el tamaño del texto. */
+    font-size: 0.95em;
+    /* Define el peso del texto. */
+    font-weight: 100;
+
+    /*  Define cuánto está inclinado el texto.
+    font-style: normal;
+    font-style: italic;
+    font-style: oblique;
+    https://cssreference.io/property/font-style/
+    */
+    font-style: oblique ;
+
+    /* Define qué glifo utilizar para cada letra. */
+    font-variant: small-caps;
+    /* Mayuscula toda la tipografia  */
+
+/* Define la altura de una sola línea de texto
+
+line-height: normal;
+line-height: 1.6;
+line-height: 30px;
+line-height: 0.8em;
+*/
+    line-height: 2em;
+
+
+
+
+/* Propiedad abreviada para font-style font-variant font-weight font-size line-height y font-family. */
+/* tengo que poner font-size / line-height  */
+font: oblique small-caps 100 0.em / 2em  "Kablammo", system-ui;
+
+}
+
+/* Agregar una tipografia externa  */
+/* Ya estan descargadas en la  carpeta assets */
+
+/* Formato woff o woff2 -  Web Open Font Format */
+@font-face {
+    font-family: "chalet"; /* Define el nombre de la tipografia  */
+    src: url("../assets/Chalet.woff") format("woff");    /* Ruta, formato */
+    /*   src: url("../assets/Chalet.woff") format("woff"), url("../assets/Chalet.woff") format("woff2") */
+    font-display: swap;
+
+}
+ 
+/*  font-display
+    auto - permite que el navegador utilice el método predeterminado que suele ser block
+    block - oculta brevemente el texto hasta que la fuente haya sido descargada por completo
+    swap - indica al nacegador que utilice la fuente alternativa para mostrar el texto hasta que la fuente personalizada se haya cargado por completo 
+    fallback - es una mezcla de auto y swap
+    optional - ocultará el texto, luego lo cargará con la fuente alternativa y finalmente aplicará la fuente personalizada. 
+
+*/
+@font-face {
+    font-family: "pecita"; 
+    src: url("../assets/Pecita.woff") format("woff"); 
+    font-display: swap;
+}
+.chalet{
+font-family: "chalet", sans-serif;
+}
+
+.pecita{
+    font-family: "pecita", sans-serif;
+    font-size: 20px;
+
+}
+.raleway{
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+
+}
+
+
+/* 
+Propiedades para el texto
+text-align (text-align: left; text-align: right; text-align: right; text-align: justify;)
+text-decoration (text-decoration: none; text-decoration: underline;)
+text-indent
+text-overflow
+text-shadow
+text-transform
+*/
+
+
+.text{
+    font-size: 16px;
+    text-align: right;
+    color: #556270;
+
+}
+
+
+
+
+
+
+
+
