@@ -156,7 +156,7 @@ font-family: "chalet", sans-serif;
 Propiedades para el texto
 text-align (text-align: left; text-align: right; text-align: right; text-align: justify;)
 text-decoration (text-decoration: none; text-decoration: underline;)
-text-indent
+text-indent (Sagria  text-indent: 0; text-indent: 0; "Valares numericos" text-indent: -2em;)
 text-overflow
 text-shadow
 text-transform
@@ -165,8 +165,12 @@ text-transform
 
 .text{
     font-size: 16px;
-    text-align: right;
+    text-align: left;
     color: #556270;
+    text-decoration: underline;
+
+    /* Define la sangría de la primera línea de texto del elemento. */
+    text-indent: 52px;
 
 }
 
