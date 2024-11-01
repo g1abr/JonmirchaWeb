@@ -157,9 +157,15 @@ Propiedades para el texto
 text-align (text-align: left; text-align: right; text-align: right; text-align: justify;)
 text-decoration (text-decoration: none; text-decoration: underline;)
 text-indent (Sagria  text-indent: 0; text-indent: 0; "Valares numericos" text-indent: -2em;)
-text-overflow
+text-overflow (text-overflow: clip; text-overflow: ellipsis;)
+    Para que funcione text overflow debe tener esto: 
+    overflow: hidden
+    white-space: nowrap
+
 text-shadow
-text-transform
+
+Define cómo se debe transformar el contenido del texto. https://cssreference.io/property/text-transform/
+text-transform ( text-transform: none; text-transform: capitalize; text-transform: uppercase; text-transform: lowercase;)
 */
 
 
@@ -168,16 +174,90 @@ text-transform
     text-align: left;
     color: #556270;
     text-decoration: underline;
-
     /* Define la sangría de la primera línea de texto del elemento. */
     text-indent: 52px;
+    /* Define cómo se comporta el contenido de texto oculto si se desborda. */
+    text-overflow: ellipsis;
+     
+}
 
+.text-overflow{
+    background-color: #4ECDC4;
+    color: white;
+    border: thick solid #BE93C5;
+    padding: 1rem;
+    width: 50%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 17px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
+.capitalize{
+    color: blueviolet;
+    text-transform: capitalize; 
+    /* Convierte la primera letra de cada palabra en una letra mayúscula */
+}
 
 
+.uppercase{
+    color: beige;
+    text-transform: uppercase;
+    /* Convierte todas las letras en mayúsculas . */
+}
+.lowercase{
+    color: chocolate;
+    text-transform: lowercase;
+    /* Convierte todas las letras en minúsculas */
+
+    letter-spacing: 3px;  /*Espacio entre las  palabras */
+}
 
 
+/* Propiedad: Para los espacios en blanco 
+https://cssreference.io/property/white-space/
+Valores 
+
+white-space: normal;
+white-space: nowrap;
+white-space: pre;
+white-space: pre-wrap;
+white-space: pre-line;
 
 
+*/
+
+
+.code{
+
+   background-color: #000;
+    white-space: pre-wrap;
+}
+
+@media screen and (min-width: 1432.09px){
+.code{
+    width: 50%;
+    height: auto; 
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #000;
+     white-space: pre-wrap;  
+}
+
+}
+.space-white{
+    white-space: pre;
+}   
+
+
+:root{
+
+    --green: green;
+    --white: white;
+    --coment: rgba(19, 24, 19, 0.185);
+    --red: red;
+    --violect: violet;
+}
