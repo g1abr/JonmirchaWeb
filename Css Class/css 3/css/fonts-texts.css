@@ -213,7 +213,7 @@ text-transform ( text-transform: none; text-transform: capitalize; text-transfor
     text-transform: lowercase;
     /* Convierte todas las letras en minúsculas */
 
-    letter-spacing: 3px;  /*Espacio entre las  palabras */
+    letter-spacing: 5px;  /*Espacio entre las  palabras */
 }
 
 
@@ -260,4 +260,33 @@ white-space: pre-line;
     --coment: rgba(19, 24, 19, 0.185);
     --red: red;
     --violect: violet;
+    
+}
+/* 
+Otras propiedades: 
+
+Word-break (word-break: normal; word-break: break-all;) 
+word-spacing (word-spacing: normal; word-spacing: 23px; con valores) 
+writing-mode
+
+*/
+.word-break{
+    /* Define cómo deben dividirse las palabras al llegar al final de una línea. */
+    word-break: break-all;
+}
+.word-spacing{
+    word-spacing: normal;
+    word-spacing: 23px;
+    word-break: 3rem;
+    word-break: break-all;
+}
+
+.model{
+    /* Modo de escritura     */
+    color: var(--white);
+    writing-mode: horizontal-tb;
+    writing-mode: sideways-lr;
+    writing-mode: vertical-lr; /* para que este en vertical y que vaya de derecha a izquierda  */
+    writing-mode: vertical-rl; /* para que este en vertical y que vaya de izquierda a derecha */
+    
 }
