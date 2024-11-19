@@ -108,6 +108,36 @@ h1, h2, h3, h4, h5, h6{
     background-image: url(../assets/lu.png);
     background-repeat: no-repeat;
     background-size: 150px;
+/* Para que la imagen comience desde el borde  */
+        background-clip: border-box;
+       
+}
+.bg-clip-2{
+    background-color: #E100FF;
+    background-image: url(../assets/chenXio.png);
+    background-repeat: no-repeat;
+    background-size: 150px;
+/* Para que la imagen comience desde el padding  */
+        background-clip: padding-box;
+}
+.bg-clip-3{
+    background-color: #E100FF;
+    background-image: url(../assets/makima.png);
+    background-repeat: no-repeat;
+    background-size: 150px;
+/* Para que la imagen comience desde el contenido  */
+    background-clip: content-box;
+    /* separar el contenido  */
+    padding: 2rem;
+}
 
-    
+.bg-origen{
+    background-color: #E100FF;
+    background-image: url(../assets/makima.png);
+    background-repeat: no-repeat;
+    background-size: 150px;
+/* Para que el color comience desde el contenido  */
+    background-origin: padding-box;
+    /* separar el contenido  */
+    padding: 2rem;
 }
