@@ -79,3 +79,35 @@ h1, h2, h3, h4, h5, h6{
     /* https://cssreference.io/property/background-position/ */
 
 }
+
+.bg-position{
+    background-image: url(../assets/link-click.gif);
+    background-repeat: no-repeat;
+    background-size: 150px ;
+    background-position-x: right;
+    background-position-y: bottom;
+}
+.bg-position-2{
+    background-image: url(../assets/link-click.gif);
+    background-repeat: no-repeat;
+    background-size: 150px ;
+    /* x & y */
+    background-position: left center ;  
+}
+.bg-position-3{
+    background-color: #E100FF;
+    background-image: url(../assets/amore.png);
+    background-repeat: no-repeat;
+    background-size: 150px ;
+    background-position: 10% 20% ;  
+}
+.bg-clip{
+    /* https://cssreference.io/property/background-clip/  */
+    
+    background-color: #E100FF;
+    background-image: url(../assets/lu.png);
+    background-repeat: no-repeat;
+    background-size: 150px;
+
+    
+}
