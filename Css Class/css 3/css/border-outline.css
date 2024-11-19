@@ -15,14 +15,17 @@ body {
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.border-radius{
+
+.box{
+  /* Caja  */
+  /* 2rem top y botton y auto left rigth */
+  margin: 2rem auto;
   background-color: blueviolet;
   width: 400px;
   height: 400px;
-/* Caja  */
+}
+.border-radius{
 border: thick solid #2980b9;
-margin-left: auto;
-margin-right: auto;
 /* Redondear los bordes  */
 border-radius: 4rem;
 
@@ -32,7 +35,65 @@ border-top-right-radius: 2rem;
 border-bottom-left-radius: 4rem;
 border-bottom-right-radius: 2rem; */
 
+/* Sentido de las manecillas del reloj */
 border-radius: 20px 50%;
 
 
+}
+.border-radius-2{
+/* Bordes elíptica */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius  */
+  border-radius: 2rem / 4rem ;
+  
+}
+.border-radius-3{
+  border-radius: 2rem 4rem / 4rem 8rem;
+}
+
+.border-radius-4{
+  /* para ver  */
+  border-radius: 50%;
+}
+.border-radius-5{
+  /* rectagulo  */
+  width: 400px;
+  height: 200px;
+  border-radius: 50%;
+
+}
+
+/* outline-color
+outline-style
+outline-width: Define el ancho de los contornos del elemento.
+outline: Shorthand 
+ */
+.outline{
+ outline-width: 5px;
+ border: 12px solid slateblue;
+
+/* outline-style: none;
+outline-style: dotted;
+outline-style: dashed;
+outline-style: solid;
+outline-style: double;
+outline-style: groove;
+ */
+ outline-style: dashed;
+ outline-color: #2980b9;
+ outline: thick solid aqua ;
+
+ /*Distancia, que se aleja o aserca de la casa
+ los valores positivos y negativos   */
+ outline-offset: 1rem;
+
+}
+input{
+  width: 50%;
+  height: 30px;
+  border: 2px solid #2980b9;
+  padding-left: 15px;
+}
+input:focus{
+  outline-color: #9cf1e3;
+  
 }

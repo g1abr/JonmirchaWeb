@@ -1,0 +1,23 @@
+*::after,
+::before {
+    box-sizing: border-box;
+}
+
+body {
+    box-sizing: inherit;
+    background: #7F00FF;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E100FF, #7F00FF);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+:root{
+    --color-text: aliceblue;
+    --text-center: center;
+}
+h1, h2, h3, h4, h5, h6{
+    color: var(--color-text) ;
+    text-align: var(--text-center);
+}
