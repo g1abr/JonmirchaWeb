@@ -138,6 +138,11 @@ h1, h2, h3, h4, h5, h6{
     background-size: 150px;
 /* Para que el color comience desde el contenido  */
     background-origin: padding-box;
+    background-origin: content-box;
+
+    /* La imagen empieza desde la imagen  */
+    background-origin: border-box;
+
     /* separar el contenido  */
     padding: 2rem;
 }
