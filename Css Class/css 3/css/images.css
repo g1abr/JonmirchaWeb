@@ -62,17 +62,35 @@ img{
     margin-left:auto ;
     margin-right: auto;
     margin-top: 52px;
-    background-color: aliceblue;
+    background-color: #ffdde1;
+   
 }
 .card img{
     height: 300px;
-
+    background-color: aliceblue;
     /* object-fit cómo el contenido de un elemento reemplazado, por ejemplo un <img> o <video>, debería redimensionarse para ajustarse a su contenedor. */
     object-fit: fill ;
-    /* Valor cover, fill */
 
+    /* Valor cover, fill, container, none*/
     /* cuando usamos cover se activa otra propiedad*/
     object-fit: cover;
+    object-fit: contain;
+    /* Otro valor none: No adaptar el tamaño ni la composición  */
+    /* object-fit: none; */
     object-position: left center;
+
+    object-position: right top;
+    object-position: 50% 50%;
     
+    
+}
+
+.car2 img{
+    object-fit: cover;
+}
+.car3 img{
+    object-fit: none;
+}
+.car4{
+    object-fit: scale-down;
 }
