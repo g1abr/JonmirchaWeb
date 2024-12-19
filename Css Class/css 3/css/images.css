@@ -93,4 +93,5 @@ img{
 }
 .car4{
     object-fit: scale-down;
+    /* Toma el valor que sea menor de los valores contain y none */
 }
