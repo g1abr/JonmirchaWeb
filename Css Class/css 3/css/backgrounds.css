@@ -1,35 +1,39 @@
 *::after,
 ::before {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    box-sizing: inherit;
-    background: #7F00FF;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #E100FF, #7F00FF);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-} 
-:root{
-    --color-text: aliceblue;
-    --text-center: center;
+  box-sizing: inherit;
+  background: #7f00ff;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #e100ff, #7f00ff);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #e100ff, #7f00ff);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-h1, h2, h3, h4, h5, h6{
-    color: var(--color-text) ;
-    text-align: var(--text-center);
+:root {
+  --color-text: aliceblue;
+  --text-center: center;
 }
-.box{
-    /* Caja  */
-    /* 2rem top y botton y auto left rigth */
-    margin: 2rem auto;
-    width: 300px;
-    height: 300px;
-    border: thick dashed salmon;
-  }
-  /*  
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-text);
+  text-align: var(--text-center);
+}
+.box {
+  /* Caja  */
+  /* 2rem top y botton y auto left rigth */
+  margin: 2rem auto;
+  width: 300px;
+  height: 300px;
+  border: thick dashed salmon;
+}
+/*  
   background-color: define el color de fondo del elemento
   background-imge: defjine la imagen de fondo del elemento
   background-size: define el tamaño de la imagen de fondo, primer valor x, segundo y 
@@ -45,115 +49,126 @@ h1, h2, h3, h4, h5, h6{
   
   
   */
-  
-.bg-color{
-    background-color: #b20a2c ;
+
+.bg-color {
+  background-color: #b20a2c;
 }
 
-.bg-image{
-    background-image: url(../assets/puesta-sol.jpg);
-    background-image: url(../assets/inuyasha.gif);
-  
+.bg-image {
+  background-image: url(../assets/puesta-sol.jpg);
+  background-image: url(../assets/inuyasha.gif);
 }
-.bg-size{
-    /* https://cssreference.io/property/background-size/  */
-    background-image: url(../assets/villanos.png);
-    /* 300px de ancho y 200px de alto */
-    background-size: 300px 200px;
-    background-size: cover; /*Adapta la imagen al tamaño de la caja, para que se vea la imagen*/
-    background-size: contain /* Se asegura que la imagen cubra el contenedor, pero se puede repetir la imagaen*/
-}
-
-.bg-repeat{
-    background-image: url(../assets/chenXio.png);
-    background-size: 100px;
-    background-repeat: repeat;
-    background-repeat: repeat-x;
-    background-repeat: repeat-y;
-    background-repeat: no-repeat;
-
-
-    background-size: contain;
-    background-position: center center ;
-    /* https://cssreference.io/property/background-position/ */
-
+.bg-size {
+  /* https://cssreference.io/property/background-size/  */
+  background-image: url(../assets/villanos.png);
+  /* 300px de ancho y 200px de alto */
+  background-size: 300px 200px;
+  background-size: cover; /*Adapta la imagen al tamaño de la caja, para que se vea la imagen*/
+  background-size: contain; /* Se asegura que la imagen cubra el contenedor, pero se puede repetir la imagaen*/
 }
 
-.bg-position{
-    background-image: url(../assets/link-click.gif);
-    background-repeat: no-repeat;
-    background-size: 150px ;
-    background-position-x: right;
-    background-position-y: bottom;
-}
-.bg-position-2{
-    background-image: url(../assets/link-click.gif);
-    background-repeat: no-repeat;
-    background-size: 150px ;
-    /* x & y */
-    background-position: left center ;  
-}
-.bg-position-3{
-    background-color: #E100FF;
-    background-image: url(../assets/amore.png);
-    background-repeat: no-repeat;
-    background-size: 150px ;
-    background-position: 10% 20% ;  
-}
-.bg-clip{
-    /* https://cssreference.io/property/background-clip/  */
-    
-    background-color: #E100FF;
-    background-image: url(../assets/lu.png);
-    background-repeat: no-repeat;
-    background-size: 150px;
-/* Para que la imagen comience desde el borde  */
-        background-clip: border-box;
-       
-}
-.bg-clip-2{
-    background-color: #E100FF;
-    background-image: url(../assets/chenXio.png);
-    background-repeat: no-repeat;
-    background-size: 150px;
-/* Para que la imagen comience desde el padding  */
-        background-clip: padding-box;
-}
-.bg-clip-3{
-    background-color: #E100FF;
-    background-image: url(../assets/makima.png);
-    background-repeat: no-repeat;
-    background-size: 150px;
-/* Para que la imagen comience desde el contenido  */
-    background-clip: content-box;
-    /* separar el contenido  */
-    padding: 2rem;
+.bg-repeat {
+  background-image: url(../assets/chenXio.png);
+  background-size: 100px;
+  background-repeat: repeat;
+  background-repeat: repeat-x;
+  background-repeat: repeat-y;
+  background-repeat: no-repeat;
+
+  background-size: contain;
+  background-position: center center;
+  /* https://cssreference.io/property/background-position/ */
 }
 
-.bg-origen{
-    background-color: #E100FF;
-    background-image: url(../assets/makima.png);
-    background-repeat: no-repeat;
-    background-size: 150px;
-/* Para que el color comience desde el contenido  */
-    background-origin: padding-box;
-    background-origin: content-box;
-
-    /* La imagen empieza desde la imagen  */
-    background-origin: border-box;
-
-    /* separar el contenido  */
-    padding: 2rem;
+.bg-position {
+  background-image: url(../assets/link-click.gif);
+  background-repeat: no-repeat;
+  background-size: 150px;
+  background-position-x: right;
+  background-position-y: bottom;
 }
-.bg-attachment{
-    background-color: #E100FF;   
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url('../assets/puesta-sol.jpg');
-    background-attachment: fixed;
-    height: 50vh; 
-    width: 70%;  
+.bg-position-2 {
+  background-image: url(../assets/link-click.gif);
+  background-repeat: no-repeat;
+  background-size: 150px;
+  /* x & y */
+  background-position: left center;
+}
+.bg-position-3 {
+  background-color: #e100ff;
+  background-image: url(../assets/amore.png);
+  background-repeat: no-repeat;
+  background-size: 150px;
+  background-position: 10% 20%;
+}
+.bg-clip {
+  /* https://cssreference.io/property/background-clip/  */
+
+  background-color: #e100ff;
+  background-image: url(../assets/lu.png);
+  background-repeat: no-repeat;
+  background-size: 150px;
+  /* Para que la imagen comience desde el borde  */
+  background-clip: border-box;
+}
+.bg-clip-2 {
+  background-color: #e100ff;
+  background-image: url(../assets/chenXio.png);
+  background-repeat: no-repeat;
+  background-size: 150px;
+  /* Para que la imagen comience desde el padding  */
+  background-clip: padding-box;
+}
+.bg-clip-3 {
+  background-color: #e100ff;
+  background-image: url(../assets/makima.png);
+  background-repeat: no-repeat;
+  background-size: 150px;
+  /* Para que la imagen comience desde el contenido  */
+  background-clip: content-box;
+  /* separar el contenido  */
+  padding: 2rem;
 }
 
+.bg-origen {
+  background-color: #e100ff;
+  background-image: url(../assets/makima.png);
+  background-repeat: no-repeat;
+  background-size: 150px;
+  /* Para que el color comience desde el contenido  */
+  background-origin: padding-box;
+  background-origin: content-box;
 
+  /* La imagen empieza desde la imagen  */
+  background-origin: border-box;
 
+  /* separar el contenido  */
+  padding: 2rem;
+}
+.bg-attachment {
+  background-color: #e100ff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../assets/puesta-sol.jpg");
+  background-attachment: fixed;
+  height: 50vh;
+  width: 100%;
+}
+.bg-multiple {
+/* La ultima imagen se va a estar al fondo, y la que va a estar al frente*/
+  background-image: url("../assets/ico.png"), url(../assets/chenXio.png);
+  background-size: 50px, cover;
+  background-repeat: repeat-x, no-repeat;
+  width: 80%;
+  height: 50vh;
+  background-position: bottom;
+
+  padding: 2rem;
+}
+.bg-art{
+    width: 80%;
+    height: 700px;
+    background: url("../assets/arbol.png") no-repeat center bottom, url('../assets/aves.png') no-repeat center bottom , url('../assets/cielo.png') no-repeat center top ;
+   
+ 
+}
