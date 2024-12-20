@@ -1,0 +1,59 @@
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+html {
+  box-sizing: inherit;
+  background: #abbaab; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffffff,
+    #abbaab
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ffffff,
+    #abbaab
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+h1, h2, h3, h4, h5, h6{
+    color: #7d2626;
+    text-align: center;
+}
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+h6::selection {
+  background-color: #eaafc8;
+  color: rgb(240, 255, 240);
+}
+.container{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.table{
+    /* Este borde solo aplica al contenido */
+    border: thick solid red;
+    font-size: 3rem;
+    /*Aplica a la propiedad tabla  */
+    /* Define si los bordes de la tabla deben estar separados o contraídos. */
+    border-collapse: separate;
+}
+.table-2{
+    width: 100%;
+    margin-top:5rem ;
+    border-collapse: collapse;
+}
+
+.table td{
+    /* Este borde solo aplica al contenido */
+    border: thick solid blue;
+    font-size: 3rem;
+}
+.table th {
+   
+    border: thick solid aqua;
+}
