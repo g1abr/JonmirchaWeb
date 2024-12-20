@@ -35,25 +35,30 @@ h6::selection {
     margin-right: auto;
 }
 .table{
+    border-spacing: 0px;
     /* Este borde solo aplica al contenido */
     border: thick solid red;
     font-size: 3rem;
     /*Aplica a la propiedad tabla  */
     /* Define si los bordes de la tabla deben estar separados o contraídos. */
     border-collapse: separate;
+    margin-bottom: 2rem;
 }
 .table-2{
     width: 100%;
-    margin-top:5rem ;
     border-collapse: collapse;
 }
 
 .table td{
     /* Este borde solo aplica al contenido */
-    border: thick solid blue;
+    border: thick solid rgb(3, 3, 22);
     font-size: 3rem;
 }
 .table th {
-   
+  
     border: thick solid aqua;
+}
+.table-3{
+    border-collapse: separate; /*Esta valor para que pueda dar resultado*/
+    empty-cells: hide;
 }
