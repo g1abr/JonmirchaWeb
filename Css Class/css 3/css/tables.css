@@ -61,4 +61,5 @@ h6::selection {
 .table-3{
     border-collapse: separate; /*Esta valor para que pueda dar resultado*/
     empty-cells: hide;
+    border-spacing: 1rem;
 }
