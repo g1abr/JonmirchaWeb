@@ -32,10 +32,14 @@ h6::selection {
 
 .contact-form{
 --form-text-color: #300;
+--form-success-color: #4caf50;
+--form-error-color: #f44336; 
+
+
 width: 80%;
 background-color: #8360c3;
 border: thin solid #2ebf91;
 margin-right: auto;
 margin-left: auto;
-
 }
+
