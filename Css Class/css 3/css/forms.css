@@ -16,9 +16,14 @@ html {
     #8360c3
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-h1, h2, h3, h4, h5, h6{
-    color: aliceblue;
-    text-align: center;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: aliceblue;
+  text-align: center;
 }
 h1::selection,
 h2::selection,
@@ -30,16 +35,20 @@ h6::selection {
   color: rgb(220, 246, 220);
 }
 
-.contact-form{
---form-text-color: #300;
---form-success-color: #4caf50;
---form-error-color: #f44336; 
+.contact-form {
+  --form-text-color: #300;
+  --form-success-color: #4caf50;
+  --form-error-color: #f44336;
 
-
-width: 80%;
-background-color: #8360c3;
-border: thin solid #2ebf91;
-margin-right: auto;
-margin-left: auto;
+  width: 80%;
+  background-color: #8360c3;
+  border: thin solid #2ebf91;
+  margin-right: auto;
+  margin-left: auto;
 }
+/* Para trabajar en bloque todos los elementos */
 
+/* Dentro de contact-form los hijos directos le aplicamos los estilos  */
+.contact-form > * {
+  display: block;
+}
