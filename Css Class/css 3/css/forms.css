@@ -77,7 +77,7 @@ h6::selection {
   border: thin solid var(--form-error-color);
 
 }
-.contact-form >*:valid{
+.contact-form >*[required]:valid{
   border: thin solid var(--form-success-color);
   
 }
