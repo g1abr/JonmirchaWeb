@@ -68,6 +68,8 @@ h6::selection {
   padding: 0.5rem;
   font-family:sans-serif ;
   color: var(--form-text-color);
+/* Para cambiar el color de cursor */
+caret-color: #8360c3;
 
 }
 .contact-form > *::placeholder{
