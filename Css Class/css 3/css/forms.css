@@ -1,9 +1,8 @@
-*::after,
-*::before {
-  box-sizing: border-box;
-}
+
 html {
-  box-sizing: inherit;
+  box-sizing: border-box;
+  font-size: 16px;
+
   background: #8360c3; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
@@ -16,6 +15,11 @@ html {
     #8360c3
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+*::after,
+*::before {
+  box-sizing: in;
+}
+
 h1,
 h2,
 h3,
@@ -39,16 +43,33 @@ h6::selection {
   --form-text-color: #300;
   --form-success-color: #4caf50;
   --form-error-color: #f44336;
+  --form-bg-color: #DDE;
 
   width: 80%;
-  background-color: #8360c3;
-  border: thin solid #2ebf91;
+  background-color: var(--form-bg-color);
+  border: thick solid var(--form-text-color);
   margin-right: auto;
   margin-left: auto;
+  padding: 2rem;
+  width: 80%;
 }
 /* Para trabajar en bloque todos los elementos */
 
 /* Dentro de contact-form los hijos directos le aplicamos los estilos  */
 .contact-form > * {
   display: block;
+ width: 100%;
+  margin-bottom: 1rem;
+}
+.button{
+ display: flex; 
+  flex-direction: row;
+  gap: 2rem;
+  
+}
+.button >*{
+  width: 50%;
+  height: 3vh;
+  border-radius: 7%;
+  border: none;
 }
