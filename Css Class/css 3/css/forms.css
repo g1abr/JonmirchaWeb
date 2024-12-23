@@ -73,7 +73,14 @@ h6::selection {
 .contact-form > *::placeholder{
   color: #8360c3;
 }
+.contact-form >*:invalid{
+  border: thin solid var(--form-error-color);
 
+}
+.contact-form >*:valid{
+  border: thin solid var(--form-success-color);
+  
+}
 
 .button{
  display: flex; 
@@ -84,6 +91,7 @@ h6::selection {
   
   
 }
+
 .button >*{
   width: 50%;
   height: 3vh;
@@ -94,4 +102,12 @@ h6::selection {
   background-color: var(--form-bg-color);
  cursor: pointer;
 
+}
+
+.button >*:hover{
+  opacity: 0.75;
+}
+
+.contact-form textarea{
+  resize: none;
 }
