@@ -89,6 +89,7 @@ h6::selection {
   height: 3vh;
   border-radius: 0.25rem;
   border: none;
+  font-weight: bold;
   color: white;
   background-color: var(--form-bg-color);
  cursor: pointer;
