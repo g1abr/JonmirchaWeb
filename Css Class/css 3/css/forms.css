@@ -70,6 +70,11 @@ h6::selection {
   color: var(--form-text-color);
 
 }
+.contact-form > *::placeholder{
+  color: #8360c3;
+}
+
+
 .button{
  display: flex; 
   flex-direction: row;
@@ -87,4 +92,5 @@ h6::selection {
   color: white;
   background-color: var(--form-bg-color);
  cursor: pointer;
+
 }
