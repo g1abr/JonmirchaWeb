@@ -29,3 +29,13 @@ h6::selection {
   background-color: #eaafc8;
   color: rgb(220, 246, 220);
 }
+
+.contact-form{
+--form-text-color: #300;
+width: 80%;
+background-color: #8360c3;
+border: thin solid #2ebf91;
+margin-right: auto;
+margin-left: auto;
+
+}
