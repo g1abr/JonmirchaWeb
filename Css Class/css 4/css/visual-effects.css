@@ -124,6 +124,11 @@ h6::selection {
     
     /* con palabras claves  */
     background-image: linear-gradient(to right, yellow, blue, red);
+    background-image: linear-gradient(to left, yellow, blue, red);
+    background-image: linear-gradient(to bottom, yellow, blue, red);
+    background-image: linear-gradient(to top, yellow, blue, red);
+    background-image: linear-gradient(to top right, yellow, blue, red);
+    background-image: linear-gradient(to bottom right, yellow, blue, red);
 
 
 }
