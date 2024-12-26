@@ -6,44 +6,43 @@ html {
     #fbc7d4,
     #9796f0
   ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #fbc7d4,
-    #9796f0
-  );
+  background: linear-gradient(to right, #fbc7d4, #9796f0);
   font-family: sans-serif;
 }
 
-
 *::after,
 *::before {
-  box-sizing:inherit;
+  box-sizing: inherit;
 }
-:root{
---color-text: white;
+:root {
+  --color-text: white;
 }
 
-h1, h2, h3, h4, h5, h6{
-    text-align: center;
-    color: var(--color-text)
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+  color: var(--color-text);
 }
-h1::selection, 
-h2::selection, 
-h3::selection, 
-h4::selection, 
-h5::selection, 
-h6::selection{
-    background: #CC95C0;
-
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+h6::selection {
+  background: #cc95c0;
 }
-.box{
-    border: thick solid red;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 5rem;
-    width: 200px;
-    height: 200px;
-    background-color: #9796f0;
+.box {
+  border: thick solid red;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5rem;
+  width: 200px;
+  height: 200px;
+  background-color: #9796f0;
 }
 /* Existen varios tipos de sombra:
 * A la caja 
@@ -51,61 +50,80 @@ h6::selection{
 * Filtro 
 */
 
-.box-shadow{
-    /* Para colocar sombra en el contenedor usar la propiedad box-shadow; los valores son en x y desenfoque radial(blur), luego la expansión  separados por espacio  
+.box-shadow {
+  /* Para colocar sombra en el contenedor usar la propiedad box-shadow; los valores son en x y desenfoque radial(blur), luego la expansión  separados por espacio  
     movimiento
     Valores posibles 
     box-shadow: mov-x mov-y blur-radius spread-blur color inset/outset ;
     */
-    /* Que la sombra de la caja se desplace 2rem en x y en y, el blur sea de 2rem, la expansión de 2rem  y color*/
-    color:#f0a596;
-    font-size: 2rem;
-    text-align: center;
-    /* box-shadow: mov-x mov-y blur-radius spread-blur color inset/outset; */
-    box-shadow: 1rem 1rem 1rem 1rem;
-    box-shadow: -1rem -1rem 1rem 1rem;
-    box-shadow: 1rem 1rem 1rem 1rem #0005;
-    box-shadow: 1rem 1rem 1rem 1rem #f00 inset;
-    box-shadow: 1rem 1rem 2rem 0.5rem #0007;
-    /* text-shadow: mov-x mov-y blur-radius color; */
-    text-shadow: -1rem -1rem 0.5rem hotpink;
- 
+  /* Que la sombra de la caja se desplace 2rem en x y en y, el blur sea de 2rem, la expansión de 2rem  y color*/
+  color: #f0a596;
+  font-size: 2rem;
+  text-align: center;
+  /* box-shadow: mov-x mov-y blur-radius spread-blur color inset/outset; */
+  box-shadow: 1rem 1rem 1rem 1rem;
+  box-shadow: -1rem -1rem 1rem 1rem;
+  box-shadow: 1rem 1rem 1rem 1rem #0005;
+  box-shadow: 1rem 1rem 1rem 1rem #f00 inset;
+  box-shadow: 1rem 1rem 2rem 0.5rem #0007;
+  /* text-shadow: mov-x mov-y blur-radius color; */
+  text-shadow: -1rem -1rem 0.5rem hotpink;
 }
 
-.box-shadow-2{
-    box-shadow: -2rem -2rem 2rem 2rem #e2f096 inset;
-    
+.box-shadow-2 {
+  box-shadow: -2rem -2rem 2rem 2rem #e2f096 inset;
 }
 
 /* Sombras multiples */
-.box-shadow-multiple{
-    font-size: 2rem;
-    text-align: center;
-    box-shadow: 1rem 1rem 1rem 1rem #0005, 1rem 1rem 1rem 1rem #e2f096 inset,
-      -0.5rem -0.5rem 0.5rem 2rem #f096ca;
-    /* text-shadow: -1rem -1rem 0.5rem navy, 1rem 1rem 0.5rem rgb(78, 55, 255); */
-
+.box-shadow-multiple {
+  font-size: 2rem;
+  text-align: center;
+  box-shadow: 1rem 1rem 1rem 1rem #0005, 1rem 1rem 1rem 1rem #e2f096 inset,
+    -0.5rem -0.5rem 0.5rem 2rem #f096ca;
+  /* text-shadow: -1rem -1rem 0.5rem navy, 1rem 1rem 0.5rem rgb(78, 55, 255); */
 }
-.box-shadow-multiple p{
-    text-shadow: -1rem -1rem 0.5rem rgb(30, 228, 76), 1rem 1rem 0.5rem rgb(78, 55, 255);
-    
+.box-shadow-multiple p {
+  text-shadow: -1rem -1rem 0.5rem rgb(30, 228, 76),
+    1rem 1rem 0.5rem rgb(78, 55, 255);
 }
 .drop-shadow {
-    width: 600px;
-    height: auto;
-  }
-  /* La propiedad drop-shadow() en CSS se utiliza para aplicar un efecto de sombra a un elemento, incluyendo formas complejas como imágenes con transparencias y elementos con bordes no rectos. Es parte de la función filter, que permite aplicar diversos efectos visuales a los elementos de una página web. chat gpt(26/12/2024) */
-  /* filter:drop-shadow (mov-x mov-y blur-radius color); */
-  .drop-shadow img {
-    max-width: 100%;
-    height: auto;
-    /* filter: drop-shadow(mov-x mov-y blur-radius color); */
-    box-shadow: 1rem 1rem 1rem 1rem #f00;
-    filter: drop-shadow(1rem 1rem 1rem orangered);
-    filter: drop-shadow(1rem 1rem 1rem steelblue);
-  }
+  width: 600px;
+  height: auto;
+}
+/* La propiedad drop-shadow() en CSS se utiliza para aplicar un efecto de sombra a un elemento, incluyendo formas complejas como imágenes con transparencias y elementos con bordes no rectos. Es parte de la función filter, que permite aplicar diversos efectos visuales a los elementos de una página web. chat gpt(26/12/2024) */
+/* filter:drop-shadow (mov-x mov-y blur-radius color); */
+.drop-shadow img {
+  max-width: 100%;
+  height: auto;
+  /* filter: drop-shadow(mov-x mov-y blur-radius color); */
+  box-shadow: 1rem 1rem 1rem 1rem #f00;
+  filter: drop-shadow(1rem 1rem 1rem orangered);
+  filter: drop-shadow(1rem 1rem 1rem steelblue);
+}
 
-.linear-gradient{
-    background: rgb(245,227,11);
-background: linear-gradient(180deg, rgba(245,227,11,1) 30%, rgba(0,134,255,1) 44%, rgba(249,32,32,1) 75%);
-  }
+.linear-gradient {
+    /* Software visual https://cssgradient.io/ */
+  background: rgb(245, 227, 11);
+  background: linear-gradient(
+    180deg,
+    rgba(245, 227, 11, 1) 30%,
+    rgba(0, 134, 255, 1) 44%,
+    rgba(249, 32, 32, 1) 75%
+  );
+  border-color: white;
+}
+.linear-gradient-2{
+    /* Podemos pasarle los grados(simpre agregar deg "GRADOS") */
+    background-image: linear-gradient(0deg, yellow, blue, red);
+    background-image: linear-gradient(20deg, yellow, blue, red);
+    background-image: linear-gradient(45deg, yellow, blue, red);
+    background-image: linear-gradient(90deg, yellow, blue, red);
+    background-image: linear-gradient(180deg, yellow, blue, red);
+    background-image: linear-gradient(270deg, yellow, blue, red);
+    background-image: linear-gradient(360deg, yellow, blue, red);
+    
+    /* con palabras claves  */
+    background-image: linear-gradient(to right, yellow, blue, red);
+
+
+}
