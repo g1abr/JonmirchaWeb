@@ -14,6 +14,7 @@ html {
   font-family: sans-serif;
 }
 
+
 *::after,
 *::before {
   box-sizing:inherit;
@@ -77,6 +78,16 @@ h6::selection{
     text-align: center;
     font-size: 2rem;
     text-shadow: 1rem 1rem 0rem red, -1rem -1rem 0.5rem green; 
-    
+}
+.drop-shadow{
+    width: 600px;
+    height: auto;
+   
+}
+.drop-shadow img{
+    /* La propiedad drop-shadow() en CSS se utiliza para aplicar un efecto de sombra a un elemento, incluyendo formas complejas como imágenes con transparencias y elementos con bordes no rectos. Es parte de la función filter, que permite aplicar diversos efectos visuales a los elementos de una página web. chat gpt(26/12/2024) */
+    /* filter:drop-shadow (mov-x mov-y blur-radius color); */
+    filter: drop-shadow(1rem 1rem 1rem red);
+    max-width: 100%;
 
 }
