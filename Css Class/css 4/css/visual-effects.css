@@ -133,3 +133,13 @@ h6::selection {
   background-image: linear-gradient(180deg, yellow 30%, blue 20%, red );
   background-image: linear-gradient(180deg, yellow 33%, blue 35% 66%, red 68%);
 }
+
+.radial-gradient{
+    /* Software de diseño */
+    background: rgb(245,227,11);
+    background: radial-gradient(circle, rgba(245,227,11,1) 20%, rgba(249,32,32,1) 75%);
+}
+/* Cyan magenta */
+.radial-gradient-2{
+    background-image: radial-gradient();
+}
