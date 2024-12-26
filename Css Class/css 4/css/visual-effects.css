@@ -102,7 +102,7 @@ h6::selection {
 }
 
 .linear-gradient {
-    /* Software visual https://cssgradient.io/ */
+  /* Software visual https://cssgradient.io/ */
   background: rgb(245, 227, 11);
   background: linear-gradient(
     180deg,
@@ -112,23 +112,23 @@ h6::selection {
   );
   border-color: white;
 }
-.linear-gradient-2{
-    /* Podemos pasarle los grados(simpre agregar deg "GRADOS") */
-    background-image: linear-gradient(0deg, yellow, blue, red);
-    background-image: linear-gradient(20deg, yellow, blue, red);
-    background-image: linear-gradient(45deg, yellow, blue, red);
-    background-image: linear-gradient(90deg, yellow, blue, red);
-    background-image: linear-gradient(180deg, yellow, blue, red);
-    background-image: linear-gradient(270deg, yellow, blue, red);
-    background-image: linear-gradient(360deg, yellow, blue, red);
-    
-    /* con palabras claves  */
-    background-image: linear-gradient(to right, yellow, blue, red);
-    background-image: linear-gradient(to left, yellow, blue, red);
-    background-image: linear-gradient(to bottom, yellow, blue, red);
-    background-image: linear-gradient(to top, yellow, blue, red);
-    background-image: linear-gradient(to top right, yellow, blue, red);
-    background-image: linear-gradient(to bottom right, yellow, blue, red);
+.linear-gradient-2 {
+  /* Podemos pasarle los grados(simpre agregar deg "GRADOS") */
+  background-image: linear-gradient(0deg, yellow, blue, red);
+  background-image: linear-gradient(20deg, yellow, blue, red);
+  background-image: linear-gradient(45deg, yellow, blue, red);
+  background-image: linear-gradient(90deg, yellow, blue, red);
+  background-image: linear-gradient(180deg, yellow, blue, red);
+  background-image: linear-gradient(270deg, yellow, blue, red);
+  background-image: linear-gradient(360deg, yellow, blue, red);
 
-
+  /* con palabras claves  */
+  background-image: linear-gradient(to right, yellow, blue, red);
+  background-image: linear-gradient(to left, yellow, blue, red);
+  background-image: linear-gradient(to bottom, yellow, blue, red);
+  background-image: linear-gradient(to top, yellow, blue, red);
+  background-image: linear-gradient(to top right, yellow, blue, red);
+  background-image: linear-gradient(to bottom right, yellow, blue, red);
+  /* Porcentaje de que valor */
+  background-image: linear-gradient(180deg, yellow 30%, blue 20%, red );
 }
