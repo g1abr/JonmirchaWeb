@@ -2,8 +2,7 @@
 *::before {
   box-sizing: border-box;
 }
-
-body {
+html {
   box-sizing: inherit;
   
 }
