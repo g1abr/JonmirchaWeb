@@ -130,19 +130,38 @@ h6::selection {
   background-image: linear-gradient(to top right, yellow, blue, red);
   background-image: linear-gradient(to bottom right, yellow, blue, red);
   /* Porcentaje de que valor */
-  background-image: linear-gradient(180deg, yellow 30%, blue 20%, red );
+  background-image: linear-gradient(180deg, yellow 30%, blue 20%, red);
   background-image: linear-gradient(180deg, yellow 33%, blue 35% 66%, red 68%);
 }
 
-.radial-gradient{
-    /* Software de diseño */
-    background: rgb(245,227,11);
-    background: radial-gradient(circle, rgba(245,227,11,1) 20%, rgba(249,32,32,1) 75%);
+.radial-gradient {
+  /* Software de diseño */
+  background: rgb(245, 227, 11);
+  background: radial-gradient(
+    circle,
+    rgba(245, 227, 11, 1) 20%,
+    rgba(249, 32, 32, 1) 75%
+  );
 }
 /* cyan magenta */
-.radial-gradient-2{
-    background-image: radial-gradient(cyan , magenta);
-    background-image: radial-gradient(cyan , magenta, red);
-    /* Degradado en forma de elipse */
-    background-image: radial-gradient(circle 4rem cyan , magenta, red);
+.radial-gradient-2 {
+  background-image: radial-gradient(cyan, magenta);
+  background-image: radial-gradient(cyan, magenta, red);
+  /* Degradado en forma de elipse */
+  background-image: radial-gradient(circle 3rem, cyan, magenta, red);
+  background-image: radial-gradient(circle 5rem, cyan 30%, magenta 80%, red);
+  /* background-image: radial-gradient(
+    circle 100px,
+    cyan 30%,
+    magenta 60%,
+    red 90%
+  ); */
+  /* Dónde se pone el circulo */
+  /* Dónde colocar el circulo */ 
+  background-image: radial-gradient(
+    circle 100px at center,
+    red 20%,
+    red 10%,
+    white 100%
+  );
 }
