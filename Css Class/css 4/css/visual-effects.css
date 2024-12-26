@@ -40,10 +40,10 @@ h6::selection{
     border: thick solid red;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 5rem;
     width: 200px;
     height: 200px;
     background-color: #9796f0;
-    margin-bottom: 5rem;
 }
 /* Existen varios tipos de sombra:
 * A la caja 
@@ -58,12 +58,17 @@ h6::selection{
     box-shadow: mov-x mov-y blur-radius spread-blur color inset/outset ;
     */
     /* Que la sombra de la caja se desplace 2rem en x y en y, el blur sea de 2rem, la expansión de 2rem  y color*/
-    box-shadow: 2rem 2rem 2rem 2rem #96f0b4;
+    color:#f0a596;
     font-size: 2rem;
     text-align: center;
-    color: #f0a596;
-    /* text-shadow: mov-x mov-y blur-radius color red */
-    text-shadow: -1rem 1rem 0.5rem hotpink ;
+    /* box-shadow: mov-x mov-y blur-radius spread-blur color inset/outset; */
+    box-shadow: 1rem 1rem 1rem 1rem;
+    box-shadow: -1rem -1rem 1rem 1rem;
+    box-shadow: 1rem 1rem 1rem 1rem #0005;
+    box-shadow: 1rem 1rem 1rem 1rem #f00 inset;
+    box-shadow: 1rem 1rem 2rem 0.5rem #0007;
+    /* text-shadow: mov-x mov-y blur-radius color; */
+    text-shadow: -1rem -1rem 0.5rem hotpink;
  
 }
 
@@ -74,20 +79,33 @@ h6::selection{
 
 /* Sombras multiples */
 .box-shadow-multiple{
-    box-shadow: -1rem -1rem 1rem 1rem #e2f096, -1rem -1rem 1rem 1rem #f096ca inset, -0.5rem -0.5rem 0.5rem 2rem rgb(78, 55, 255);
-    text-align: center;
     font-size: 2rem;
-    text-shadow: 1rem 1rem 0rem red, -1rem -1rem 0.5rem green; 
-}
-.drop-shadow{
-    width: 600px;
-    height: auto;
-   
-}
-.drop-shadow img{
-    /* La propiedad drop-shadow() en CSS se utiliza para aplicar un efecto de sombra a un elemento, incluyendo formas complejas como imágenes con transparencias y elementos con bordes no rectos. Es parte de la función filter, que permite aplicar diversos efectos visuales a los elementos de una página web. chat gpt(26/12/2024) */
-    /* filter:drop-shadow (mov-x mov-y blur-radius color); */
-    filter: drop-shadow(1rem 1rem 1rem red);
-    max-width: 100%;
+    text-align: center;
+    box-shadow: 1rem 1rem 1rem 1rem #0005, 1rem 1rem 1rem 1rem #e2f096 inset,
+      -0.5rem -0.5rem 0.5rem 2rem #f096ca;
+    /* text-shadow: -1rem -1rem 0.5rem navy, 1rem 1rem 0.5rem rgb(78, 55, 255); */
 
 }
+.box-shadow-multiple p{
+    text-shadow: -1rem -1rem 0.5rem rgb(30, 228, 76), 1rem 1rem 0.5rem rgb(78, 55, 255);
+    
+}
+.drop-shadow {
+    width: 600px;
+    height: auto;
+  }
+  /* La propiedad drop-shadow() en CSS se utiliza para aplicar un efecto de sombra a un elemento, incluyendo formas complejas como imágenes con transparencias y elementos con bordes no rectos. Es parte de la función filter, que permite aplicar diversos efectos visuales a los elementos de una página web. chat gpt(26/12/2024) */
+  /* filter:drop-shadow (mov-x mov-y blur-radius color); */
+  .drop-shadow img {
+    max-width: 100%;
+    height: auto;
+    /* filter: drop-shadow(mov-x mov-y blur-radius color); */
+    box-shadow: 1rem 1rem 1rem 1rem #f00;
+    filter: drop-shadow(1rem 1rem 1rem orangered);
+    filter: drop-shadow(1rem 1rem 1rem steelblue);
+  }
+
+.linear-gradient{
+    background: rgb(245,227,11);
+background: linear-gradient(180deg, rgba(245,227,11,1) 30%, rgba(0,134,255,1) 44%, rgba(249,32,32,1) 75%);
+  }
