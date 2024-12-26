@@ -14,5 +14,23 @@ html {
     to right,
     #fbc7d4,
     #9796f0
+
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+:root{
+--color-text: white;
+}
+
+h1, h2, h3, h4, h5, h6{
+    text-align: center;
+    color: var(--color-text)
+}
+h1::selection, 
+h2::selection, 
+h3::selection, 
+h4::selection, 
+h5::selection, 
+h6::selection{
+    background: #CC95C0;
+
 }
