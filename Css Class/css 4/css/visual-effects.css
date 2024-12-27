@@ -189,3 +189,17 @@ h6::selection {
         blue 240deg 360deg
       );
 }
+
+.repeat-gradient-lineal{
+  background-image: repeating-linear-gradient(40deg, green 0 10px, blue 10px 20px, red 20px 30px);
+  background-image: repeating-linear-gradient(90deg, green 0 10px, blue 10px 20px, red 20px 30px);
+
+}
+.repeat-gradient-radial{
+  background-image: repeating-radial-gradient(cyan 0 10px, magenta 10px 20px, yellow 20px 30px);
+  background-image: repeating-radial-gradient(ellipse 50px 30px,  cyan 0 10px, magenta 10px 20px, yellow 20px 30px);
+  background-image: repeating-radial-gradient(circle 50px,  cyan 0 10px, magenta 10px 20px, yellow 20px 30px);
+}
+.repeat-gradient-conic{
+  background-image: repeating-conic-gradient(red 0 8%, yellow 8% 16%, black 16% 24%);
+}
