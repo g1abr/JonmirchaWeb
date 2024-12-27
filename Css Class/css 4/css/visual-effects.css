@@ -147,16 +147,20 @@ h6::selection {
 .radial-gradient-2 {
   background-image: radial-gradient(cyan, magenta);
   background-image: radial-gradient(cyan, magenta, red);
-  /* Degradado en forma de elipse */
   background-image: radial-gradient(circle 3rem, cyan, magenta, red);
   background-image: radial-gradient(circle 5rem, cyan 30%, magenta 80%, red);
-  background-image: radial-gradient(
-    elipse 100px,
+  /* Degradado en forma de elipse */
+   background-image: radial-gradient(
+    ellipse 100px 50px,
     cyan 30%,
     magenta 60%,
     red 90%
   );
+  background-image: radial-gradient(circle 100px at bottom , cyan 30%, magenta 80%, red);
+
+  
   /* Dónde se pone el circulo */
-  /* Dónde colocar el circulo */ 
+
+  
  
 }
