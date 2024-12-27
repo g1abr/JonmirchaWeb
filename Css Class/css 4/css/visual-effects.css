@@ -75,9 +75,7 @@ hr{
 .box-shadow-2 {
   box-shadow: -2rem -2rem 2rem 2rem #e2f096 inset;
 }
-img{
-  max-width: 100%;
-}
+
 /* Sombras multiples */
 .box-shadow-multiple {
   font-size: 2rem;
@@ -216,6 +214,4 @@ img{
   /* Debemos usar esta propiedad para la dona */
   background-image: radial-gradient(white 30%, black 31%, transparent 33%), conic-gradient(cyan 0 50%, magenta 50% 80%, yellow 80%);
   border-radius: 50%;
-  
-
 }
