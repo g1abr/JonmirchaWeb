@@ -37,12 +37,14 @@ h6::selection {
 }
 .box {
   border: thick solid red;
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto;
+  margin-right: auto; */
   margin-bottom: 5rem;
   width: 200px;
   height: 200px;
   background-color: #9796f0;
+  margin-left: auto;
+  margin-right: auto;
 }
 /* Existen varios tipos de sombra:
 * A la caja 
@@ -50,8 +52,12 @@ h6::selection {
 * Filtro 
 */
 hr{
-  border: thin solid pink;
+  border: thin solid rgb(12, 12, 12);
 }
+img{
+  max-width: 100%;
+}
+
 .box-shadow {
   /* Para colocar sombra en el contenedor usar la propiedad box-shadow; los valores son en x y desenfoque radial(blur), luego la expansión  separados por espacio  
     movimiento
@@ -214,4 +220,11 @@ hr{
   /* Debemos usar esta propiedad para la dona */
   background-image: radial-gradient(white 30%, black 31%, transparent 33%), conic-gradient(cyan 0 50%, magenta 50% 80%, yellow 80%);
   border-radius: 50%;
+}
+
+.card {
+  border: thick solid #000;
+  margin-bottom: 5rem;
+  width: 600px;
+  height: 400px;
 }
