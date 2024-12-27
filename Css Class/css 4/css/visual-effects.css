@@ -49,7 +49,9 @@ h6::selection {
 * Al texto 
 * Filtro 
 */
-
+hr{
+  border: thin solid pink;
+}
 .box-shadow {
   /* Para colocar sombra en el contenedor usar la propiedad box-shadow; los valores son en x y desenfoque radial(blur), luego la expansión  separados por espacio  
     movimiento
@@ -73,7 +75,9 @@ h6::selection {
 .box-shadow-2 {
   box-shadow: -2rem -2rem 2rem 2rem #e2f096 inset;
 }
-
+img{
+  max-width: 100%;
+}
 /* Sombras multiples */
 .box-shadow-multiple {
   font-size: 2rem;
@@ -202,4 +206,16 @@ h6::selection {
 }
 .repeat-gradient-conic{
   background-image: repeating-conic-gradient(red 0 8%, yellow 8% 16%, black 16% 24%);
+}
+
+.chart-gradient{
+  background-image: conic-gradient(cyan 0 50%, magenta 50% 80%, yellow 80%);
+  border-radius: 50%;
+}
+.donut-gradient{
+  /* Debemos usar esta propiedad para la dona */
+  background-image: radial-gradient(white 30%, black 31%, transparent 33%), conic-gradient(cyan 0 50%, magenta 50% 80%, yellow 80%);
+  border-radius: 50%;
+  
+
 }
