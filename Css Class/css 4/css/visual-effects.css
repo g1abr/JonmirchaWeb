@@ -228,3 +228,70 @@ img{
   width: 600px;
   height: 400px;
 }
+.card img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  /* desenfoque */
+  /* Unidad de medida puede se cualquiera */
+  filter: blur(1rem);
+  filter: blur(0.5rem);
+  filter: blur(0.15rem);
+
+/* la intensidad de la luz */
+/* Valor que acepta 1 a 0*/
+  filter: brightness(1); /* Con brillo */
+  filter: brightness(0); /* Sin brillo */
+  filter: brightness(1.5);
+
+  /* El contraste */
+
+  filter: contrast(0);
+  filter: contrast(0.25);
+  filter: contrast(0.75);
+  filter: contrast(1);
+  filter: contrast(2);
+
+  /* Escala de grises */
+  filter: grayscale(0);
+  filter: grayscale(0.25);
+  filter: grayscale(0.75);
+  filter: grayscale(1);
+
+/* Escala amallo, cafe  */
+  filter: sepia(0);
+  filter: sepia(0.25);
+  filter: sepia(0.75);
+  filter: sepia(1);
+  
+  /* Hue-rotate */
+  filter: hue-rotate(0deg);
+  filter: hue-rotate(30deg);
+  filter: hue-rotate(60deg);
+  filter: hue-rotate(90deg);
+  filter: hue-rotate(120deg);
+  filter: hue-rotate(150deg);
+  filter: hue-rotate(180deg);
+  filter: hue-rotate(210deg);
+  filter: hue-rotate(240deg);
+  filter: hue-rotate(300deg);
+  filter: hue-rotate(330deg);
+
+  /* Invertir los colores */
+  /* Funciona con los valores de 0 a 1*/
+  
+  filter: invert(0); /* Por defaul  */
+  filter: invert(1);
+
+  /* Opacity */
+  filter: opacity(0);
+  filter: opacity(0.5);
+  filter: opacity(0.75);
+  filter: opacity(1); /* Defaul */
+  
+  /* Saturación   */
+  filter: saturate(0);
+  filter: saturate(0.25);
+  filter: saturate(0.75);
+  filter: saturate(1);
+}
