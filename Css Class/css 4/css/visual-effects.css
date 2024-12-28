@@ -232,7 +232,9 @@ img{
   object-fit: cover;
   width: 100%;
   height: 100%;
-  /* desenfoque */
+}
+.filter{
+/* desenfoque */
   /* Unidad de medida puede se cualquiera */
   filter: blur(1rem);
   filter: blur(0.5rem);
@@ -265,6 +267,7 @@ img{
   filter: sepia(1);
   
   /* Hue-rotate */
+  /* Rota los colores del elemento en el espectro de tonos. */
   filter: hue-rotate(0deg);
   filter: hue-rotate(30deg);
   filter: hue-rotate(60deg);
@@ -294,4 +297,11 @@ img{
   filter: saturate(0.25);
   filter: saturate(0.75);
   filter: saturate(1);
+
+/* Inver */
+  filter: invert(1);
+}
+
+.filters-multiple{
+  filter: blur(0.2rem) hue-rotate(270deg) opacity(0.75) invert(1);
 }
