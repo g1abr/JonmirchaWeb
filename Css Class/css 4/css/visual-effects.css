@@ -309,7 +309,8 @@ img{
   position: relative;
 }
 
-.backdrop-filter{
+.backdrop-filter,
+.backdrop-filter-multiple{
   position: absolute;
   top: 0px;
   left: 0;
@@ -327,6 +328,18 @@ img{
   backdrop-filter: grayscale(1);
   backdrop-filter: opacity(0.25);
   backdrop-filter: hue-rotate(180deg);
-
-
+  backdrop-filter: blur(18rem);
 }
+
+.backdrop-filter-multiple h4{
+  border-radius: 1rem;
+  padding: 2rem;
+  font-size: 3rem;
+  color: #fff;
+  background-color: rgba(255, 102, 255, 0.5);
+  backdrop-filter: blur(1rem) hue-rotate(250deg);
+}
+
+/* .dark-mode{
+  filter: invert(1);
+} */
