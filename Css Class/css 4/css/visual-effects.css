@@ -479,7 +479,7 @@ clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%,
   shape-outside: ellipse();
 }
 .shape-3{
-  margin: 2rem 2rem 0 0;
+  margin: 2rem 2rem 2rem 2rem;
   shape-outside: polygon(
     1% 19%,
     25% 4%,
