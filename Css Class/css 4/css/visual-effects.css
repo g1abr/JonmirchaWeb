@@ -90,10 +90,10 @@ img{
     -0.5rem -0.5rem 0.5rem 2rem #f096ca;
   /* text-shadow: -1rem -1rem 0.5rem navy, 1rem 1rem 0.5rem rgb(78, 55, 255); */
 }
-.box-shadow-multiple p {
+/* .box-shadow-multiple p {
   text-shadow: -1rem -1rem 0.5rem rgb(30, 228, 76),
     1rem 1rem 0.5rem rgb(78, 55, 255);
-}
+} */
 .drop-shadow {
   width: 600px;
   height: auto;
@@ -453,5 +453,25 @@ clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%,
     padding: 1rem;
     margin: 0 auto 5rem;
     width: 78rem;
-   
+    text-shadow: none;
+}
+#shapes img{
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: 0 50%;
+}
+.float-left{
+  float: left;
+}
+.float-right{
+  float: right;
+}
+
+/* Para que se adapte al contenido, del circulo  */
+.shape-1{
+  margin: 1rem 2rem ;
+  shape-outside: circle();
+ 
 }
