@@ -471,7 +471,26 @@ clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%,
 
 /* Para que se adapte al contenido, del circulo  */
 .shape-1{
-  margin: 1rem 2rem ;
+  margin: 1rem 0 2rem 1rem ;
   shape-outside: circle();
- 
+}
+.shape-2{
+  margin: 1rem 0 2rem 1rem ;
+  shape-outside: ellipse();
+}
+.shape-3{
+  margin: 2rem 2rem 0 0;
+  shape-outside: polygon(
+    1% 19%,
+    25% 4%,
+    52% 4%,
+    59% 16%,
+    69% 37%,
+    66% 53%,
+    63% 67%,
+    72% 77%,
+    83% 84%,
+    98% 99%,
+    1% 99%
+  );
 }
