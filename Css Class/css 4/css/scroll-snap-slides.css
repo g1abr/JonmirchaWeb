@@ -10,4 +10,25 @@ body {
     #6dd5ed,
     #2193b0
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin: 0;
+
+}
+html{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+}
+*,*::after, *::before{
+    box-sizing: inherit;
+}
+
+.slides{
+    width: 100%;
+
+    /* Para que pueda funcionar scroll-snap red
+    El contenedor tiene la diapositivas, tiene que tener una altura del tamaño del vh (100%), además, ese ajuste lo puede hacer en verticar y horizontal
+    eje y & x
+     */
+
+
 }
