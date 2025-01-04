@@ -43,11 +43,12 @@ overflow-y: scroll;
 }
 .slide:nth-child(even){
   background: #2193b0;
+  height: inherit;
 }
 .slide-container{
 width: 100%;
 height: inherit;
-margin: 0 2rem;
+margin: 0 auto;
 display: flex;
 flex-wrap: wrap;
 flex-direction: column;
