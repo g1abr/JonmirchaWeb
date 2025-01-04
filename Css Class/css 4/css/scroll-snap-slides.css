@@ -44,8 +44,6 @@ overflow-y: scroll;
 .slide:nth-child(even){
   background: #2193b0;
 }
-
-
 .slide-container{
 width: 100%;
 height: inherit;
