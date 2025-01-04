@@ -33,7 +33,29 @@ html{
 */
 overflow-y: scroll;
 }
+/* .slides:nth-child(even){
+  background: #000;
+} */
 .slide{
+  width: 100%;
+  height: inherit;
+  background: #6dd5ed ;
+}
+.slide:nth-child(even){
+  background: #2193b0;
+}
+
+
+.slide-container{
 width: 100%;
 height: inherit;
+margin: 0 2rem;
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+font-size: 2vw;
+color: #A83279;
+
 }   
