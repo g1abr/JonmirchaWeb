@@ -32,6 +32,12 @@ html{
 /* También en el eje que queramos controlar el ajuste del scroll la propiedad de overflow-eje: debe tener el valor de scroll
 */
 overflow-y: scroll;
+
+/* Para el efecto usar la propiedad scroll-snap-type */
+/* Recibe dos valores red valor en x, en y, el valor en inline,  el valor de block, both  */
+/* blue scroll-snap-type: [x | y | inline | block | both [mandatory | proximity] ]; */
+
+
 }
 /* .slides:nth-child(even){
   background: #000;
