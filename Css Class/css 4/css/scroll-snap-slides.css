@@ -36,7 +36,13 @@ overflow-y: scroll;
 /* Para el efecto usar la propiedad scroll-snap-type */
 /* Recibe dos valores red valor en x, en y, el valor en inline,  el valor de block, both  */
 /* blue scroll-snap-type: [x | y | inline | block | both [mandatory | proximity] ]; */
-
+scroll-snap-type: none;
+scroll-snap-type: block mandatory;
+scroll-snap-type: y proximity;
+scroll-snap-type: y mandatory;
+/* Activar el scroll-snap y agregar a los elementos hijos la propiedad 
+  scroll-snap-align: ;
+*/
 
 }
 /* .slides:nth-child(even){
@@ -46,6 +52,12 @@ overflow-y: scroll;
   width: 100%;
   height: inherit;
   background: #6dd5ed ;
+/* Para activar la propiedad scroll-snap debo poner la propiedad scroll-snap-align (hacia donde se va a alinear el valor*/
+scroll-snap-align: none;
+scroll-snap-align: start;
+scroll-snap-align: end;
+scroll-snap-align: center;
+
 }
 .slide:nth-child(even){
   background: #2193b0;
@@ -63,4 +75,40 @@ align-items: center;
 font-size: 2vw;
 color: #A83279;
 
-}   
+}    
+.carousel{
+  border: thin solid saddlebrown;
+  width: 50%;
+  height: 50%;
+  /* En x debe ser en hidden para ocultar el contenido que se desborda, así tenemos el efecto */
+  overflow-x: hidden;
+  display: flex;
+
+
+}
+
+.carousel-container{
+  /* Debe tener la anchura.  */
+  width: 100%;
+ 
+  overflow-x: scroll;
+/* Para ocultar el scroll en y  overflow-y: hidden */
+  overflow-y: hidden;
+  display: grid;
+  grid-template-columns: repeat(5, 100%);
+  scroll-snap-type: mandatory;
+}
+
+.carousel-slide{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #A83279;
+  color: white;
+  scroll-snap-align: center ;
+}
+.carousel-slide:nth-child(even){
+  background-color: aquamarine;
+  color: #A83279;
+}
