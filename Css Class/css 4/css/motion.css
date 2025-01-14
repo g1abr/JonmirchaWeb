@@ -1,0 +1,103 @@
+html{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+*, *::after, *::before{
+    box-sizing: inherit;
+}
+body{
+    background: #4776E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #8E54E9, #4776E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8E54E9, #4776E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      
+}
+h1, h2, h3{
+    color: azure;
+    text-align: center;
+}
+h3{
+    text-align: left;
+}
+.box{
+    border: thick solid red;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5rem;
+    width: 200px; 
+    height: 200px;
+}
+.card{
+    border: thick solid #000;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5rem;
+    width: 600px;
+    height: 400px;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 50%;
+}
+
+
+/* Transiciones:
+    transition-property: Osea que propiedad le quiero una transición 
+    transition-duration: cuanto tiempo va durar mi transición (puede expresarse en segundo, milisegundos) 
+    transition-timing-function: tenemos varias funciones que van a aplicar, con que efecto vamos a aplicar la transición  (Valores: linear "lineal", ease (aceleración) ease-in (aceleración al principio), ease-out (aceleración al final), ease-in-out () steps, por defaul none
+    transition-delay: tiempo de espera antes de que comience la transción 
+
+    transtion: property duration timing-funcion delay
+*/
+
+.transitions .box{
+    background-color: magenta; 
+    transition-property: background-color;  /* La propiedad que quiero la transición */
+    transition-duration: 500ms ; /*La duración de la transición  */
+    transition-timing-function: ease; /* el tiempo con que efecto vamos a aplicar la transición */
+    transition-delay:  0.5s; /* tiempo de espera antes de aplicar el efecto */
+    border-color: #4776E6 ;
+    transition: border-color 2s linear 1s ;
+
+    /* Para que no se pierda la animación del fondo sin quitar el borde, le damos all para todos los elementos animables  */
+    transition: all 2s ease-in-out 250ms ;
+
+}
+
+.transitions .box:hover{
+    background-color: aliceblue;
+    border-color:aquamarine ;
+    border-radius: 50%;
+}
+
+/* No todas las propiedades son animables
+Aquí el listado de las propiedades animables https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties
+
+y estas según chat no se pueden animar display, position float clear overflow, overflow-x,  verflow-y margin-* padding-*  border-style  border-width box-shadow  margin-*  padding-* border-style  border-width box-shadow
+
+*/
+
+/* Vamos a ver como controlar que cada propiedad tenga su propia funcion de transición   */
+
+.transitions .card{
+    transition: opacity 1s ease-out, border-color 3s steps(5),
+    filter 2s ease-in 1s, box-shadow 1.5s linear 2s;
+}
+
+.transitions .card:hover{
+    opacity: 0.75;
+    border-color: #8E54E9;
+    filter: blur(0.15rem);
+    box-shadow: 1rem 1rem 2rem 0.5rem #000;
+}
+
+.transitions .card img{
+    transform: object-position 2s ease-in-out 3s;
+}
+.transitions .card img:hover{
+    object-position: 100% 50%;
+}
