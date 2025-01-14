@@ -96,7 +96,12 @@ color: #A83279;
   overflow-y: hidden;
   display: grid;
   grid-template-columns: repeat(5, 100%);
-  scroll-snap-type: mandatory;
+  scroll-snap-type: x mandatory;
+  scroll-snap-type: inline mandatory;
+  scroll-snap-type: both mandatory;
+  scroll-snap-type: both proximity;
+  scroll-snap-type: both mandatory;
+
 }
 
 .carousel-slide{
@@ -111,4 +116,20 @@ color: #A83279;
 .carousel-slide:nth-child(even){
   background-color: aquamarine;
   color: #A83279;
+}
+
+/* Texto con degradado  */
+
+.gradient-text{
+  background-image: linear-gradient(45deg, magenta, yellow);
+  /* Para que el texto tome el degradado hay que aplicar dos propiedades */
+  -ms-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  -ms-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+
 }
