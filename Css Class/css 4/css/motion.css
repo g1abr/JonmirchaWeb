@@ -101,3 +101,68 @@ y estas según chat no se pueden animar display, position float clear overflow, 
 .transitions .card img:hover{
     object-position: 100% 50%;
 }
+.transform-2d img {
+    transition: transform 2s ease-in-out;
+}
+.transform-2d img:hover{
+    transform: none;
+    transform: translateX(1.5rem); /* Se desplaza la imagen en el eje x (o el objeto) a la distancia que establezcas  */
+    transform: translateX(-2.5rem); /*También acepta valores negativos */
+    transform: translateY(2.5rem); /*Se desplaza el elemento hacia el eje Y   */
+    transform: translate(-4.5rem, 4.5rem); /* primer valor para x, segundo para Y*/
+    transform: translate(50%, 50%);  /* Usando valores porcentuales dependiendo del tamaño, toma de referencia el cien porcierto para el tamaño del objeto a base de eso se mueve  */
+    transform: translate(-50%, -50%); /* Se puede colocar porcentajes negativos */
+    transform: translate(50%, 50px);
+
+    /* Escala  aumenta el tamaño*/
+    transform: scaleX(2);
+    transform: scaleY(2);
+    transform: scale(2, 2);
+    transform: scale(-1, 2);
+
+    /* Rotación  */
+    /* Valores: grados, radianes */
+    transform: rotateX(90deg); /* La rotación en x, no se puede apreciar muy bien en dos dimenciones */
+    transform: rotateY(60deg);
+    transform: rotateY(60deg);
+    transform: rotateY(90deg);
+    transform: rotateZ(-60deg); /* La rotación en z es perfecta en dimeción en 2D */
+
+    /* skew */
+    transform: skewX(20deg);
+    transform: skewX(-20deg);
+    transform: skewY(20deg);
+    transform: skew(-20deg);
+    transform: skew(20deg, -20deg);
+
+    /* Matrix (scaleX() skewY(), skewX(), scaleY(), translateX(), translateY() */
+    /* Calculos */
+    transform: matrix(1, 2, 2, 1, 20, 10); 
+    /* Calculos matematicos  para utilizar esta funcion 
+    https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/matrix
+    */
+    /* red transformaciones multiples */
+    transform: translate(25%, -50%) rotate(240deg) skew(10deg, 20deg) scale(1rem, -2rem) ;
+
+}
+/* Activar la perspectiva */
+.transform-3d{
+    /* Elemento padre */
+    perspective: 10rem;
+}
+
+.transform-3d img{
+    transition: transform 2s ease-in-out;
+}
+.transform-3d img:hover{
+    /* Para activar la perspectiva */
+    /* transform:  translateZ(4.5rem); */
+    transform: perspective(1000px) translateZ(4rem); /* perspectiva se activa desde le elemento padre, la perspectiva resive un valor, que puede estar representado en pixeles, rem, em, etc. Va indicar la longitud que tenemos para manejar la ilución de perspectiva en tres dimensiones   */
+      
+    transform: perspective(100rem) translateZ(4rem); /* Profundidad */
+    transform: perspective(1rem) translateZ(4rem); /* Profundidad */
+    transform: translateZ(4rem); /* Agregando la propiedad perspectiva al elemento padre */
+    
+}
+
+/* blue https://youtu.be/mYkmedvCLxY?si=d1jDRkDUfV4yUYqf&t=4293 */
