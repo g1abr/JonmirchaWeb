@@ -265,3 +265,71 @@ y estas según chat no se pueden animar display, position float clear overflow, 
   transform: rotateY(180deg); /* Este detras  */
 }
 
+/* Animaciones */
+
+@keyframes myAwesomeAnimation {
+    /* Fotogramas de inicio */
+    from{
+        opacity: 0;
+        transform: translateX(0);
+    }
+        /* Fotogramas final */
+    to{
+        opacity: 1;
+        transform: translateX(100%);
+    }
+}
+
+
+.my-animation{
+    /* Propiedades animation: name duration timing-function delay iteration-count direction fill-mode;    */
+    animation-name: myAwesomeAnimation;/* Darle nombre a la animación  */
+    animation-duration: 5s;
+    animation-timing-function: cubic-bezier(1,0,0,1); /* Agregar los ejectos de aceleración y tambien esta propiedad cubic-bezier */
+    animation-timing-function: cubic-bezier(0.33, 0.92, 0.92, 0.36);
+    animation-timing-function: ease-in-out;
+    animation-delay: 1500ms;  /* El retraso que va a tener la animación, puede expresarse en milisegundo  */
+    animation-delay: 0; /* sin retraso */
+    animation-iteration-count: 2;    /* numero de veces que quiero que se haga la animación  */
+    animation-iteration-count: infinite;  /* Infinita */
+    animation-direction: reverse;
+    animation-direction: alternate-reverse;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    /* Al final de la animación se queda con los estilos finales de la animación  */
+    animation-fill-mode: forwards; /* Esta valor para que la animación se quede con los estilos que definieron en el ultimo fotograma */
+    animation-fill-mode: backwards; /* Al inicio de la animación se queda con los estilos iniciales de la animación */
+    animation-fill-mode: both; /* both aplica al mismo tiempo forwards y  backwards */
+    /* Estado, corre la animación, pausar la animación, pero es mejor usarlo con js, para los estados */
+    animation-play-state: paused;
+    animation-play-state: running; /* defaul */
+    animation: myAwesomeAnimation 2s ease-in-out 150ms 3 reverse both;
+    animation: myAwesomeAnimation 1.5s ease 250ms 7 alternate both running;
+}
+@keyframes myAwesomeAnimation2 {
+    0% {
+      opacity: 0;
+      transform: translateX(0);
+    }
+  
+    50% {
+      opacity: 0.5;
+      transform: translateX(-50%);
+    }
+  
+    75% {
+      transform: translateX(-75%);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateX(100%);
+    }
+  }
+  
+  .my-animation-2 {
+    animation: myAwesomeAnimation2 2s;
+    animation: myAwesomeAnimation2 5s;
+    animation: myAwesomeAnimation2 1s;
+    animation: myAwesomeAnimation2 6s;
+  }
