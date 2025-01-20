@@ -229,7 +229,7 @@ y estas según chat no se pueden animar display, position float clear overflow, 
   transform-style: preserve-3d; /* Le estamos diciendo que los elementos hijos tengan su propia perspectiva independiente  Lo significa que a los elementos le puedo dar una transformación en 3D red */
 }
 .flip-card-2{
-    transform: center right;
+    transform-origin: center right;
 }
 .flip-card-1:hover {
     transform: rotateY(180deg);
