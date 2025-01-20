@@ -305,8 +305,11 @@ y estas según chat no se pueden animar display, position float clear overflow, 
     animation-play-state: running; /* defaul */
     animation: myAwesomeAnimation 2s ease-in-out 150ms 3 reverse both;
     animation: myAwesomeAnimation 1.5s ease 250ms 7 alternate both running;
+    animation: myAwesomeAnimation 1.5s ease 250ms 7 alternate backwards running;
 }
 @keyframes myAwesomeAnimation2 {
+/* Fotogramas iniciales e intermedios, agregar fotogramas a la animación:   */
+
     0% {
       opacity: 0;
       transform: translateX(0);
@@ -332,4 +335,44 @@ y estas según chat no se pueden animar display, position float clear overflow, 
     animation: myAwesomeAnimation2 5s;
     animation: myAwesomeAnimation2 1s;
     animation: myAwesomeAnimation2 6s;
+  }
+
+  @keyframes multipleAnimation1 {
+    0% {
+      opacity: 1;
+      filter: brightness(1.5);
+    }
+  
+    50% {
+      opacity: 0;
+      filter: hue-rotate(120deg);
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes multipleAnimation2 {
+    0% {
+      transform: translateY(0);
+    }
+  
+    50% {
+      transform: translateY(-100%);
+    }
+    70%{
+        transform-origin: center bottom;
+        transform: rotateY(30deg);
+    }
+  
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .animation-multiple {
+    animation: multipleAnimation1 2s infinite;
+    animation: multipleAnimation2 2s infinite;
+    animation: multipleAnimation1 2s infinite, multipleAnimation2 1s 3 ease-in-out;
   }
