@@ -513,5 +513,71 @@ y estas según chat no se pueden animar display, position float clear overflow, 
     border: 0.5vw solid rgba(209, 197, 197, 0.148);
     border-left-color: #4776E6 ;
     animation: spinner 2s ease-in-out infinite ;
-
   }
+
+.button{
+  text-align: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn{
+  position: relative;
+  border: none;
+  border-radius: 0.25rem;
+   padding: .2rem;
+   width: 15rem;
+   height: 2.5rem;
+   font-size: 1.25rem;
+   cursor: pointer;
+   overflow: hidden;
+   background-color: rgb(198, 243, 246);
+   font-weight: bold;
+   box-shadow: 0.25rem 0.25rem 0.5rem 0.25rem rgba(0, 0, 0, 0.42);
+}
+/* En tu elemento after(porque quiero que este despues del botón)   */
+.anim-bottom::after{
+  content: "";
+  position: absolute;
+  /* Abajo le damos 0 */
+  bottom: 0;
+  /* con el width en cero no se vera nada, eso lo cambiaremos en el estado hover */
+  width: 0;
+  height: .25rem;
+  background-color: rgb(0, 227, 11);
+/* Aquí el truco, vamos a hacer una transformación con estas propiedades */
+transition: width 0.5s ease, left 0.5s ease, right 0.5s ease;
+}
+/* Aquí cambiamos el tamaño del width para que se vea el background-color */
+.anim-bottom:hover::after {
+  width: 100%;
+}
+/* Llamando las clases cambiamos el valor de left y right respectivamente  */
+.to-left::after {
+  left: 0;
+}
+
+.to-center::after {
+  left: 50%;
+}
+
+.to-center:hover::after {
+  left: 0;
+}
+
+.to-right::after {
+  right: 0;
+}
+
+.anim-bg-gradient{
+  background-image: linear-gradient(to right, rgba(212, 104, 122, 0.508), rgba(238, 130, 238, 0.881),
+   rgb(30, 255, 0), rgb(0, 183, 255));
+  color: white;
+  background-size: 300% 100%;
+  transition:  background-position 0.5s ease-in-out;
+}
+.anim-bg-gradient:hover{
+  background-position: 100% 0;
+  color: #000;
+}
