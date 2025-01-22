@@ -581,3 +581,46 @@ transition: width 0.5s ease, left 0.5s ease, right 0.5s ease;
   background-position: 100% 0;
   color: #000;
 }
+
+.tabs-menu{
+  position: relative;
+  width: 70%;
+  height: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #f4c86fa0;
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  color: white;
+  font-weight: bold;
+
+}
+
+/* Oculatar checkbook, radio */
+.tabs-menu input[type="radio"]{
+  display: none;
+}
+
+.tabs-menu label{
+  position: relative;
+/* Vamos a provechar la funcion cal() */
+  width: calc(100% / 4 - 0.5rem);
+  text-align: center;
+  cursor: pointer;
+}
+
+.tabs-menu label:hover{
+  color: rebeccapurple;
+
+}
+
+/* Quiero que cuando un input este en estado checked, quiero afectar la etiqueta label que esta como hermana */
+.tabs-menu input[type="radio"]:checked+label{
+  color: rebeccapurple;
+}
+.tab-bg-hover{
+  position: absolute;
+}
