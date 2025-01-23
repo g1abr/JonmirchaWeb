@@ -2,6 +2,7 @@ html{
     box-sizing: border-box;
     font-family: sans-serif;
     font-size: 16px;
+    overflow-x: hidden;
 }
 
 *, *::after, *::before{
@@ -582,45 +583,67 @@ transition: width 0.5s ease, left 0.5s ease, right 0.5s ease;
   color: #000;
 }
 
-.tabs-menu{
+.tabs-menu {
   position: relative;
-  width: 70%;
-  height: 3rem;
   margin-left: auto;
   margin-right: auto;
   padding: 1rem;
   border-radius: 1rem;
-  background-color: #f4c86fa0;
+  width: 70%;
+  height: 3rem;
   display: flex;
   justify-content: space-between;
-  justify-items: center;
-  color: white;
+  align-items: center;
+  background-color: #f4c86fa0;
   font-weight: bold;
 
 }
 
 /* Oculatar checkbook, radio */
-.tabs-menu input[type="radio"]{
+.tabs-menu input[type="radio"] {
   display: none;
 }
 
-.tabs-menu label{
+.tabs-menu label {
   position: relative;
+  z-index: 1;
 /* Vamos a provechar la funcion cal() */
   width: calc(100% / 4 - 0.5rem);
   text-align: center;
   cursor: pointer;
 }
 
-.tabs-menu label:hover{
-  color: rebeccapurple;
-
+.tabs-menu label:hover {
+  color: #8e2d84;
 }
 
 /* Quiero que cuando un input este en estado checked, quiero afectar la etiqueta label que esta como hermana */
-.tabs-menu input[type="radio"]:checked+label{
-  color: rebeccapurple;
+.tabs-menu input[type="radio"]:checked + label {
+  color: white;
+
 }
-.tab-bg-hover{
+
+.tab-bg-hover {
   position: absolute;
+  width: calc(100% / 4 - 0.5rem);
+  height: 2rem;
+  border-radius: 0.5rem;
+  background-image: linear-gradient(90deg, #a00, #d00);
+  transition: transform 300ms ease-in-out;
+}
+
+#tab-1:checked ~ .tab-bg-hover {
+  transform: translateX(0);
+}
+
+#tab-2:checked ~ .tab-bg-hover {
+  transform: translateX(100%);
+}
+
+#tab-3:checked ~ .tab-bg-hover {
+  transform: translateX(200%);
+}
+
+#tab-4:checked ~ .tab-bg-hover {
+  transform: translateX(300%);
 }
